@@ -11,9 +11,7 @@ def get_args():
     parser.add_argument(
         "--config", "-c", help="path to config", type=Path, default=DEFAULT_CONFIG_DIR
     )
-    parser.add_argument(
-        "--out", "-o", help="directory to store artifacts", type=Path
-    )
+    parser.add_argument("--out", "-o", help="directory to store artifacts", type=Path)
     return parser.parse_args()
 
 

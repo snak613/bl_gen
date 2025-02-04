@@ -285,6 +285,32 @@ async def get_microsoft_eop_ranges(
         return {"ipv4": [], "ipv6": []}
 
 
+async def get_microsoft_ip_tracker_ranges(
+    url: Optional[str] = None,
+    updater_config: Optional[Dict[str, Any]] = {},
+    client_config: Optional[Dict[str, Any]] = {},
+    force_refresh: bool = False,
+):
+    url = url or (
+        "https://github.com/aalex954/MSFT-IP-Tracker"
+        "/releases/latest/download/msft_asn_ip_ranges.txt"
+    )
+
+    try:
+        updater = ResourceUpdater(**updater_config, client_config=client_config)
+        result = await updater.get(url, force=force_refresh) or b""
+        ranges = result.decode().splitlines()
+
+        return {
+            "ipv4": [ip for ip in ranges if is_valid_ipv4(ip)],
+            "ipv6": [ip for ip in ranges if is_valid_ipv6(ip)],
+        }
+
+    except Exception as e:
+        logger.error(f"Error fetching Microsoft Tracker from Alex954's Github: {e}")
+        return {"ipv4": [], "ipv6": []}
+
+
 async def get_isc_thread_category(
     url: str = "https://isc.sans.edu/api/threatcategory/research?json",
     updater_config: Optional[Dict[str, Any]] = {},
