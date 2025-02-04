@@ -1,0 +1,171 @@
+{
+    "forcepoint": {
+        "match": [
+            "Forcepoint Cloud",
+            "Websense"
+        ],
+        "reject": []
+    },
+    "censys": {
+        "match": [
+            "CENSYS-ARIN-"
+        ],
+        "reject": []
+    },
+    "domaintools": {
+        "match": [
+            "DOMAINTOOLS"
+        ],
+        "reject": []
+    },
+    "zscaler": {
+        "match": [
+            "ZSCALER"
+        ],
+        "reject": []
+    },
+    "bitdefender": {
+        "match": [
+            "Bitdefender"
+        ],
+        "reject": []
+    },
+    "ikarus": {
+        "match": [
+            "IKARUS"
+        ],
+        "reject": []
+    },
+    "trustwave": {
+        "match": [
+            "TRUSTWAVE"
+        ],
+        "reject": []
+    },
+    "fortinet": {
+        "match": [
+            "FORTINET"
+        ],
+        "reject": []
+    },
+    "mcafee": {
+        "match": [
+            "mcafee"
+        ],
+        "reject": []
+    },
+    "netskope": {
+        "match": [
+            "NETSKOPE"
+        ],
+        "reject": []
+    },
+    "trendmicro": {
+        "match": [
+            "TRENDMICRO"
+        ],
+        "reject": []
+    },
+    "digitalocean": {
+        "match": [
+            "DIGITALOCEAN"
+        ],
+        "reject": []
+    },
+    "akamai": {
+        "match": [
+            "AKAMAI",
+            "NOMINUM"
+        ],
+        "reject": [
+            "LINODE"
+        ]
+    },
+    "linode": {
+        "match": [
+            "LINODE"
+        ],
+        "reject": []
+    },
+    "paloalto": {
+        "match": [
+            "PAN0",
+            "PALO-ALTO-NETWORKS"
+        ],
+        "reject": []
+    },
+    "proofpoint": {
+        "match": [
+            "PROOFPOINT"
+        ],
+        "reject": []
+    },
+    "symantec": {
+        "match": [
+            "Symantec",
+            "MessageLabs"
+        ],
+        "reject": []
+    },
+    "barracuda": {
+        "match": [
+            "BARRACUDA"
+        ],
+        "reject": []
+    },
+    "cloudflare": {
+        "match": [
+            "CLOUDFLARE",
+            "Cloudflare"
+        ],
+        "reject": []
+    },
+    "alibaba": {
+        "match": [
+            "alibaba"
+        ],
+        "reject": []
+    },
+    "tencent": {
+        "match": [
+            "tencent"
+        ],
+        "reject": []
+    },
+    "huawei-cloud": {
+        "match": [
+            "Huawei Cloud"
+        ],
+        "reject": []
+    },
+    "kingsoft": {
+        "match": [
+            "Kingsoft"
+        ],
+        "reject": []
+    },
+    "baidu": {
+        "match": [
+            "Baidu"
+        ],
+        "reject": []
+    },
+    "inspur": {
+        "match": [
+            "Inspur"
+        ],
+        "reject": []
+    },
+    "AWEX-Hostinger": {
+        "match": [
+            "AWEX Hostinger"
+        ],
+        "reject": []
+    },
+    "AS-Hostinger": {
+        "match": [
+            "AS-HOSTINGER"
+        ],
+        "reject": []
+    }
+}

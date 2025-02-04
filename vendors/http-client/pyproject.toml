@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "http_client"
+version = "0.0.1"
+dynamic = ["dependencies"]
+description = "Async HTTP Client using either aiohttp or httpx"
+
+
+[tool.setuptools]
+packages = ["http_client"]
+package-dir = { "" = "src" }
+package-data = { "http_client" = [
+    "aiohttp/*",
+    "aiohttp/**/*",
+    "httpx/*",
+    "httpx/**/*",
+] }
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
+

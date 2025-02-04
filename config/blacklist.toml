@@ -1,0 +1,163 @@
+[general]
+out_dir = "out" # Leave empty to default to current directory, will be created if not exist
+force_refresh = false
+
+
+[ip_ranges]
+exclude_groups = [ "cloudflare", "jlang_tor", "amazon,aws,microsoft,azure", "amazon,aws", "microsoft,azure"] # "digitalocean",
+exclude_cloudflare_jd_cloud = false
+
+out_ips_file_name = "blocked_ips.json"
+out_cidrs_ipv4_file_name = "blocked_cidrs_ipv4.json"
+out_cidrs_ipv6_file_name = "blocked_cidrs_ipv6.json"
+
+[ip_ranges.updater]
+app_name = "python-resource-updater"
+cache_dir = "cache"
+cache_ttl = 18000
+version = ""
+use_system_cache = true
+in_memory_fallback = true
+
+
+[ip_ranges.sources]
+
+# [ip_ranges.sources.asn_map]
+# ttl = "30"
+# force_refresh = false
+
+[ip_ranges.sources.asn]
+ttl = "30m"
+force_refresh = false
+
+[ip_ranges.sources.aws]
+ttl = "6h"
+force_refresh = false
+
+
+
+[ip_ranges.sources.blocklist_de]
+ttl = "30m"
+force_refresh = false
+
+[ip_ranges.sources.azure]
+ttl = "6h"
+force_refresh = false
+
+[ip_ranges.sources.cloudflare]
+ttl = "6h"
+force_refresh = false
+
+[ip_ranges.sources.digitalocean]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.forcepoint]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.fortinet]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.github]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.google]
+ttl = "6h"
+force_refresh = false
+
+[ip_ranges.sources.ipsum]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.isc]
+ttl = "30m"
+force_refresh = false
+
+[ip_ranges.sources.jlang]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.linode]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.microsoft]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.microsoft_eop]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.others]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.paloalto]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.symantec]
+ttl = ""
+force_refresh = false
+
+[ip_ranges.sources.tor_exit_nodes]
+ttl =  "30m"
+force_refresh = false
+
+[ip_ranges.sources.tags]
+ttl = "30m"
+force_refresh = false
+
+[ip_ranges.sources.zscaler]
+ttl = ""
+force_refresh = false
+
+
+
+[redirect_rules]
+static_dir = "blacklist_dev/static/blacklist"
+exclude = []
+persist = false
+
+[redirect_rules.remote_hosts]
+exclude = []
+msft = "msft_remote_hosts.json"
+aggressive = "aggressive_remote_hosts.json"
+others = "other_remote_hosts.json"
+
+out_file =  "blocked_remote_hosts.json"
+
+[redirect_rules.user_agents]
+filename = "user_agents.json"
+out_file = "blocked_user_agents.json"
+
+[redirect_rules.redirect_domains]
+filename = "redirect_domains.json"
+out_file = "redirect_domains.json"
+
+
+[client]
+
+[client.http]
+timeout = 5
+verify_ssl = true
+proxies = []
+follow_redirects = true
+max_redirects = 20
+
+[client.http.headers]
+
+
+[client.retry]
+max_retries = 5
+timeout = 30.0
+status_codes = [ 404, 408, 504, 502, 503]
+reraise = false
+
+[client.extras]
+
+
