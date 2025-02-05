@@ -30,4 +30,4 @@ jobs:
         run: chmod +x commit.sh
 
       - name: Commit and push changes
-        run: ./commit.sh ${{ secrets.GITHUB_TOKEN }} "out/"
+        run: ./commit.sh ${{ secrets.GITHUB_TOKEN }} "out/" "cache/"

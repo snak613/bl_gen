@@ -662,9 +662,9 @@ async def get_github_tree_sha(
     }
 
 
-def get_cache_paths(version="v1") -> Tuple[Path, Path]:
+def get_cache_paths(cache_dir: Optional[str] = None) -> Tuple[Path, Path]:
     """Get standardized cache file paths"""
-    cache_dir = Path(user_cache_dir(appname="asn_maps", version=version))
+    cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     return (cache_dir / "history.json", cache_dir / "asn_maps.json")
 
@@ -674,7 +674,8 @@ async def get_asn_maps(
     client_config: Optional[Dict[str, Any]] = {},
     force_refresh: bool = False,
 ) -> Dict[str, Dict[str, Any]]:
-    history_path, cache_path = get_cache_paths()
+    cache_dir = updater_config.get("cache_dir", "")
+    history_path, cache_path = get_cache_paths(cache_dir)
 
     if not force_refresh:
         try:
