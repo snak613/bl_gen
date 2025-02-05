@@ -1,0 +1,28 @@
+{
+    "messages": [
+        [
+            "info",
+            "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+        ]
+    ],
+    "see_also": [],
+    "version": "1.2",
+    "data_call_name": "announced-prefixes",
+    "data_call_status": "supported",
+    "cached": true,
+    "data": {
+        "prefixes": [],
+        "query_starttime": "2025-01-21T08:00:00",
+        "query_endtime": "2025-02-04T08:00:00",
+        "resource": "13399",
+        "latest_time": "2025-02-04T08:00:00",
+        "earliest_time": "2000-08-01T00:00:00"
+    },
+    "query_id": "20250204135229-b5497a7b-3199-4a1a-978b-58c84717b11a",
+    "process_time": 0,
+    "server_id": "app120",
+    "build_version": "live.2025.1.17.248",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2025-02-04T13:52:29.494651"
+}

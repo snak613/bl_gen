@@ -7,9 +7,9 @@ force_refresh = false
 exclude_groups = [ "cloudflare", "jlang_tor", "amazon,aws,microsoft,azure", "amazon,aws", "microsoft,azure"] # "digitalocean",
 exclude_cloudflare_jd_cloud = false
 
-out_ips_file_name = "blocked_ips.json"
-out_cidrs_ipv4_file_name = "blocked_cidrs_ipv4.json"
-out_cidrs_ipv6_file_name = "blocked_cidrs_ipv6.json"
+out_ips_file_name = "ips.json" #"blocked_ips.json"
+out_cidrs_ipv4_file_name = "cidrs_ipv4.json"#"""blocked_cidrs_ipv4.json"
+out_cidrs_ipv6_file_name = "cidrs_ipv6.json"#"blocked_cidrs_ipv6.json"
 
 [ip_ranges.updater]
 app_name = "python-resource-updater"
@@ -22,9 +22,13 @@ in_memory_fallback = true
 
 [ip_ranges.sources]
 
-# [ip_ranges.sources.asn_map]
-# ttl = "30"
-# force_refresh = false
+[ip_ranges.sources.asn_map]
+ttl = "30m"
+force_refresh = false
+
+[ip_ranges.sources.msft_tracker]
+ttl = "12h"
+force_refresh = false
 
 [ip_ranges.sources.asn]
 ttl = "30m"
@@ -33,8 +37,6 @@ force_refresh = false
 [ip_ranges.sources.aws]
 ttl = "6h"
 force_refresh = false
-
-
 
 [ip_ranges.sources.blocklist_de]
 ttl = "30m"
@@ -129,15 +131,15 @@ msft = "msft_remote_hosts.json"
 aggressive = "aggressive_remote_hosts.json"
 others = "other_remote_hosts.json"
 
-out_file =  "blocked_remote_hosts.json"
+out_file =  "remote_hosts.json" #"blocked_remote_hosts.json"
 
 [redirect_rules.user_agents]
 filename = "user_agents.json"
-out_file = "blocked_user_agents.json"
+out_file = "user_agents.json" #"blocked_user_agents.json"
 
 [redirect_rules.redirect_domains]
 filename = "redirect_domains.json"
-out_file = "redirect_domains.json"
+out_file = "domains.json" #"redirect_domains.json"
 
 
 [client]

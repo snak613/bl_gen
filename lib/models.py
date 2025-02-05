@@ -1,10 +1,9 @@
-import re
 from pathlib import Path
 from typing import Dict, List, Optional, Union
 
 import toml
 from http_client.models import ClientConfig
-from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 SECOND = 1
 MINUTE = 60 * SECOND
@@ -35,6 +34,7 @@ class UpdaterConfig(BaseModel):
     @field_validator("cache_ttl", mode="before")
     @classmethod
     def validate_ttl(cls, v) -> float:
+        print(v)
         try:
             unit = 1
             if isinstance(v, str) and v[-1] in units_map.keys():
@@ -44,11 +44,12 @@ class UpdaterConfig(BaseModel):
         except Exception:
             return 5 * units_map["h"]
 
-    @field_validator("cache_dir", mode="before")
-    @classmethod
-    def validate_cache_dir(cls, v):
-        if v == "":
-            return None
+    # @field_validator("cache_dir", mode="before")
+    # @classmethod
+    # def validate_cache_dir(cls, v):
+    #     if v == "":
+    #         return 
+    #     return v
 
 
 class IPRangesConfig(BaseModel):

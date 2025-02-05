@@ -67,23 +67,26 @@ class ResourceUpdater:
 
     def _setup_storage(self, cache_dir: Optional[Path], use_system_cache: bool):
         if cache_dir:
+            # logger.info(f"using cache Dir: {cache_dir}")
             self.cache_dir = cache_dir
         elif use_system_cache:
             sys_cache = Path(user_cache_dir(self.app_name, version=self.version))
-            sys_cache.mkdir(parents=True, exist_ok=True)
+            
             self.cache_dir = sys_cache
         else:
             self.cache_dir = Path(gettempdir())
-
+        
         self._writable = self._check_write_access()
 
     def _check_write_access(self) -> bool:
         try:
+            self.cache_dir.mkdir(parents=True, exist_ok=True)
             test_file = self.cache_dir / ".write_test"
             test_file.touch()
             test_file.unlink()
             return True
-        except OSError:
+        except OSError as e:
+            logger.info(f"{self.cache_dir} is unwritable: {e}")
             if not self.in_memory_fallback:
                 raise RuntimeError(
                     f"No write access to {self.cache_dir} and in-memory fallback disabled"
@@ -139,6 +142,8 @@ class ResourceUpdater:
             logger.debug(f"Using valid disk cache for {self.url.strip()}")
             return self._load_from_disk()
 
+        
+        # logger.debug(f"Force: {force}, valid cache : {self._disk_cache_valid}, writable: {self._writable}")
         logger.debug(f"Fetching from network for {self.url.strip()}")
         data = await self._fetch_from_source(**kwargs)
 
@@ -217,6 +222,7 @@ class ResourceUpdater:
                 self.modified_path.write_text(self._last_modified)
 
             # Atomic replace
+            # logger.info(f"caching  to : {self.resource_path}")
             temp_path.replace(self.resource_path)
         finally:
             if temp_path.exists():

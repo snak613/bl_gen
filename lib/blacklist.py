@@ -1060,7 +1060,7 @@ async def get_all_ranges(
     default_updater_config = UpdaterConfig.model_validate(
         config.get("updater", updater_config)
     )
-    sources_updater_config = config.get("sources", {})
+    sources_updater_config: Dict[str, Any] = config.get("sources", {})
 
     tasks = []
 
@@ -1081,6 +1081,7 @@ async def get_all_ranges(
         ("linode", get_linode_ips),
         ("microsoft", get_microsoft_public_ips),
         ("microsoft_eop", get_microsoft_eop_ranges),
+        ("msft_tracker", get_microsoft_ip_tracker_ranges),
         ("others", get_other_asn_ranges),
         ("paloalto", get_paloalto_ips),
         ("symantec", get_symantec_ranges),
@@ -1089,8 +1090,10 @@ async def get_all_ranges(
         ("zscaler", get_zscaler_ips),
     ]:
         source_updater_config = UpdaterConfig.model_validate(
-            sources_updater_config[source_name]
+            sources_updater_config.get(source_name, {})
         )
+
+        
 
         updater_config = default_updater_config.model_copy(
             update=source_updater_config.model_dump(exclude_unset=True)
@@ -1099,7 +1102,9 @@ async def get_all_ranges(
         global_force_refresh = config.get("general", {}).get(
             "force_refresh", force_refresh
         )
-        source_force_refresh = sources_updater_config[source_name].get("force_refresh")
+        source_force_refresh = sources_updater_config.get(source_name, {}).get(
+            "force_refresh"
+        )
         force_refresh = source_force_refresh or global_force_refresh
 
         logger.debug(
@@ -1414,4 +1419,5 @@ SOURCE_TO_GETTER_MAP = {
     "tor_exit_nodes": get_tor_exit_nodes,
     "tags": get_multiple_tag_ranges,
     "zscaler": get_zscaler_ips,
+    "msft_tracker": get_microsoft_ip_tracker_ranges,
 }

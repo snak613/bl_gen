@@ -1,7 +1,8 @@
-from lib import process_blacklist, load_config
-import asyncio
 import argparse
+import asyncio
 from pathlib import Path
+
+from lib import load_config, process_blacklist
 
 DEFAULT_CONFIG_DIR = "config/blacklist.toml"
 

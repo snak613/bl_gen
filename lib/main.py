@@ -613,7 +613,7 @@ class RedirectRulesManager:
 
 
 async def process_ip_ranges(
-    ip_config, out_dir: Optional[Path] = NotImplementedError
+    ip_config, out_dir: Optional[Path] = None,
 ) -> Dict[str, Any]:
     try:
         exclude_groups = ip_config.get("exclude_groups", [])
