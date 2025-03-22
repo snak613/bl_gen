@@ -85,38 +85,6 @@ async def get_multiple_tag_ranges(
     return processed_results
 
 
-async def get_vpn_ip_ranges(
-    asn_maps: Optional[Dict[str, Dict]] = None,
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
-    force_refresh: bool = False,
-) -> Dict[str, List[str]]:
-    if asn_maps is None:
-        asn_maps = await get_asn_maps(updater_config, client_config, force_refresh)
-        logger.debug(
-            f"ASN Maps contain: IPv4={len(asn_maps.get('ipv4', {}))} ASNs, IPv6={len(asn_maps.get('ipv6', {}))} ASNs"
-        )
-    return await get_tag_ip_ranges(
-        "vpn", asn_maps, updater_config, client_config, force_refresh
-    )
-
-
-async def get_tor_ip_ranges(
-    asn_maps: Optional[Dict[str, Dict]] = None,
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
-    force_refresh: bool = False,
-) -> Dict[str, List[str]]:
-    if asn_maps is None:
-        asn_maps = await get_asn_maps(updater_config, client_config, force_refresh)
-        logger.debug(
-            f"ASN Maps contain: IPv4={len(asn_maps.get('ipv4', {}))} ASNs, IPv6={len(asn_maps.get('ipv6', {}))} ASNs"
-        )
-    return await get_tag_ip_ranges(
-        "tor", asn_maps, updater_config, client_config, force_refresh
-    )
-
-
 async def get_asn_ranges_by_name(
     match_conditions: Optional[Dict[str, Dict[str, List[str]]]] = None,
     url: str = "https://ftp.ripe.net/ripe/asnames/asn.txt",

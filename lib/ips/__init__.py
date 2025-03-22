@@ -27,6 +27,8 @@ from .paloalto import get_paloalto_ips
 from .tags import get_asn_ranges_by_name, get_multiple_tag_ranges, get_tag_ip_ranges
 from .tor import get_tor_exit_nodes
 from .zscaler import get_zscaler_ips
+from .tags import get_vpn_ip_ranges, get_tor_ip_ranges
+
 
 __all__ = [
     "get_asn_maps",
@@ -65,4 +67,6 @@ __all__ = [
     "get_paloalto_ips",
     "get_tor_exit_nodes",
     "get_zscaler_ips",
+    "get_vpn_ip_ranges",
+    "get_tor_ip_ranges",
 ]
