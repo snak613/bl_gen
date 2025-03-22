@@ -6,7 +6,7 @@ from .asn_maps import (
     get_cache_paths,
 )
 from .aws import get_aws_ips
-from .azure import (
+from .microsoft import (
     get_azure_ips,
     get_microsoft_eop_ranges,
     get_microsoft_ip_tracker_ranges,
