@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 from urllib.parse import urljoin
 
-from appdirs import user_cache_dir
 from loguru import logger
 
 from .models import UpdaterConfig
@@ -1093,8 +1092,6 @@ async def get_all_ranges(
         source_updater_config = UpdaterConfig.model_validate(
             sources_updater_config.get(source_name, {})
         )
-
-        
 
         updater_config = default_updater_config.model_copy(
             update=source_updater_config.model_dump(exclude_unset=True)
