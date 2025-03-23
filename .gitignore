@@ -7,3 +7,4 @@ test.py
 .env
 .aider*
 ruff.toml
+__pycache__/
