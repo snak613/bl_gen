@@ -11,7 +11,6 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "[+] No files were changed"
 else
     echo "[+] Files were changed! Pushing changes..."
-    exit 1
     git pull
     git add $TARGET_DIR $CACHE_DIR
     git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
