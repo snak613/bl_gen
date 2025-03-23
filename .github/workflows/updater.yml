@@ -7,7 +7,7 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
-  download:
+  update-files:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -29,5 +29,5 @@ jobs:
       - name: Make commit script executable
         run: chmod +x commit.sh
 
-      - name: Commit and push changes
+      - name: Commit files if changed
         run: ./commit.sh ${{ secrets.GITHUB_TOKEN }} "out/" "cache/"

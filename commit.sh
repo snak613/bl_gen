@@ -6,15 +6,8 @@ GITHUB_TOKEN="${1:-}"
 TARGET_DIR="${2:-}"
 CACHE_DIR="${3:-}"
 
-if [ -z "$TARGET_DIR" ]; then
-  echo "Error: Target directory not provided."
-  exit 1
-fi
 
-# Add this line to clean untracked files
-git clean -fd $TARGET_DIR $CACHE_DIR
-
-if [ -z "$(git status --porcelain $TARGET_DIR)" ]; then
+if [ -z "$(git ls-files --modified $TARGET_DIR)" ]; then
     echo "[+] No files were changed"
 else
     echo "[+] Files were changed! Pushing changes..."
