@@ -103,3 +103,7 @@ class HttpClient(BaseHttpClient):
 
     async def put(self, url: str, **kwargs) -> HttpResponse:
         return await self.request("PUT", url, **kwargs)
+
+    async def patch(self, url: str, **kwargs) -> HttpResponse:
+        return await self.request("PATCH", url, **kwargs)
+    
