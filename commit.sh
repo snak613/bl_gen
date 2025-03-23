@@ -11,6 +11,8 @@ if [ -z "$TARGET_DIR" ]; then
   exit 1
 fi
 
+# Add this line to clean untracked files
+git clean -fd $TARGET_DIR $CACHE_DIR
 
 if [ -z "$(git status --porcelain $TARGET_DIR)" ]; then
     echo "[+] No files were changed"
