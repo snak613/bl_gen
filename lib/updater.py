@@ -42,7 +42,7 @@ class ResourceUpdater:
         self.app_name = app_name
         self.version = version
 
-        self.client_config = ClientConfig.model_validate(client_config)
+        self.client_config = ClientConfig.model_validate(client_config or {})
         self._session_owner = None
         self.http_client = http_client
 
@@ -71,11 +71,11 @@ class ResourceUpdater:
             self.cache_dir = cache_dir
         elif use_system_cache:
             sys_cache = Path(user_cache_dir(self.app_name, version=self.version))
-            
+
             self.cache_dir = sys_cache
         else:
             self.cache_dir = Path(gettempdir())
-        
+
         self._writable = self._check_write_access()
 
     def _check_write_access(self) -> bool:
@@ -90,7 +90,7 @@ class ResourceUpdater:
             if not self.in_memory_fallback:
                 raise RuntimeError(
                     f"No write access to {self.cache_dir} and in-memory fallback disabled"
-                )
+                ) from None
             return False
 
     @property
@@ -142,7 +142,6 @@ class ResourceUpdater:
             logger.debug(f"Using valid disk cache for {self.url.strip()}")
             return self._load_from_disk()
 
-        
         # logger.debug(f"Force: {force}, valid cache : {self._disk_cache_valid}, writable: {self._writable}")
         logger.debug(f"Fetching from network for {self.url.strip()}")
         data = await self._fetch_from_source(**kwargs)

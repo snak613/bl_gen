@@ -48,7 +48,7 @@ class UpdaterConfig(BaseModel):
     # @classmethod
     # def validate_cache_dir(cls, v):
     #     if v == "":
-    #         return 
+    #         return
     #     return v
 
 

@@ -1,19 +1,20 @@
-from typing import Any, Dict, List, Optional
 import asyncio
+from typing import Any, Dict, List, Optional
 
 from loguru import logger
 
 from ..updater import ResourceUpdater
-from .asn_maps import get_asn_maps, get_asn_ranges
 from ..utils import get_module_dir, load_json
+from .asn_maps import get_asn_maps, get_asn_ranges
 
 
 async def get_asn_list_by_tag(
     tag,
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
 ) -> List[str]:
+    updater_config = updater_config or {}
     api_endpoint = "https://bgp.tools/tags/%s.txt"
     updater = ResourceUpdater(**updater_config, client_config=client_config)
     result = await updater.get(api_endpoint % (tag), force=force_refresh) or b""
@@ -23,10 +24,11 @@ async def get_asn_list_by_tag(
 async def get_tag_ip_ranges(
     tag: str,
     asn_maps: Optional[Dict[str, Dict]] = None,
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
 ) -> Dict[str, List[str]]:
+    updater_config = updater_config or {}
     if asn_maps is None:
         asn_maps = await get_asn_maps(updater_config, client_config, force_refresh)
 
@@ -55,12 +57,14 @@ async def get_tag_ip_ranges(
 
 
 async def get_multiple_tag_ranges(
-    tags: List[str] = ["vpn", "tor"],
+    tags: Optional[List[str]] = None,
     asn_maps: Optional[Dict[str, Dict]] = None,
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
 ) -> Dict[str, Dict[str, List[str]]]:
+    tags = tags or ["vpn", "tor"]
+    updater_config = updater_config or {}
     if asn_maps is None:
         asn_maps = await get_asn_maps(updater_config, client_config, force_refresh)
         logger.debug(
@@ -89,8 +93,8 @@ async def get_asn_ranges_by_name(
     match_conditions: Optional[Dict[str, Dict[str, List[str]]]] = None,
     url: str = "https://ftp.ripe.net/ripe/asnames/asn.txt",
     asn_maps: Optional[Dict[str, Dict]] = None,
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
 ) -> Dict[str, Dict[str, List[str]]]:
     if asn_maps is None:
@@ -160,3 +164,36 @@ async def get_asn_ranges_by_name(
         )
 
     return results
+
+
+async def get_vpn_ip_ranges(
+    asn_maps: Optional[Dict[str, Dict]] = None,
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
+    force_refresh: bool = False,
+) -> Dict[str, List[str]]:
+    updater_config = updater_config or {}
+    if asn_maps is None:
+        asn_maps = await get_asn_maps(updater_config, client_config, force_refresh)
+        logger.debug(
+            f"ASN Maps contain: IPv4={len(asn_maps.get('ipv4', {}))} ASNs, IPv6={len(asn_maps.get('ipv6', {}))} ASNs"
+        )
+    return await get_tag_ip_ranges(
+        "vpn", asn_maps, updater_config, client_config, force_refresh
+    )
+
+
+async def get_tor_ip_ranges(
+    asn_maps: Optional[Dict[str, Dict]] = None,
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
+    force_refresh: bool = False,
+) -> Dict[str, List[str]]:
+    if asn_maps is None:
+        asn_maps = await get_asn_maps(updater_config, client_config, force_refresh)
+        logger.debug(
+            f"ASN Maps contain: IPv4={len(asn_maps.get('ipv4', {}))} ASNs, IPv6={len(asn_maps.get('ipv6', {}))} ASNs"
+        )
+    return await get_tag_ip_ranges(
+        "tor", asn_maps, updater_config, client_config, force_refresh
+    )

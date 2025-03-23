@@ -2,9 +2,9 @@ import argparse
 import asyncio
 from pathlib import Path
 
-from lib import load_config, process_blacklist
+from lib import load_config, process_ips
 
-DEFAULT_CONFIG_DIR = "config/blacklist.toml"
+DEFAULT_CONFIG_DIR = "config/default.toml"
 
 
 def get_args():
@@ -21,7 +21,7 @@ async def main():
     config = load_config(args.config)
     if args.out:
         config["general"]["out_dir"] = args.out
-    await process_blacklist(config)
+    await process_ips(config)
 
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ from loguru import logger
 
 from ..models import UpdaterConfig
 from . import (
+    get_asn_maps,
     get_asn_ranges_by_name,
     get_aws_ips,
     get_azure_ips,
@@ -29,16 +30,18 @@ from . import (
     get_tor_exit_nodes,
     get_zscaler_ips,
 )
-from .static import get_extra_ranges, get_spread_ranges, get_regex_ranges, get_bl_ranges
+from .static import get_bl_ranges, get_extra_ranges, get_regex_ranges, get_spread_ranges
 
 
 async def get_all_ranges(
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
+    updater_config: Optional[Dict[str, Any]] = None,
+    client_config: Optional[Dict[str, Any]] = None,
     force_refresh: bool = False,
     *,
-    config: Dict[str, Any] = {},
+    config: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Dict[str, List[str]]]:
+    config = config or {}
+    updater_config = updater_config or {}
     results = {}
 
     default_updater_config = UpdaterConfig.model_validate(
@@ -77,8 +80,6 @@ async def get_all_ranges(
             sources_updater_config.get(source_name, {})
         )
 
-        
-
         updater_config = default_updater_config.model_copy(
             update=source_updater_config.model_dump(exclude_unset=True)
         )
@@ -105,209 +106,6 @@ async def get_all_ranges(
                 ),
             )
         )
-
-    completed = await asyncio.gather(*[t[1] for t in tasks], return_exceptions=True)
-
-    for name, result in zip([t[0] for t in tasks], completed):
-        if isinstance(result, Exception):
-            logger.error(f"Error fetching {name}: {result}")
-            results[name] = {"ipv4": [], "ipv6": []}
-        else:
-            results[name] = result
-
-    results["extras"] = get_extra_ranges()
-    results["spread"] = get_spread_ranges()
-    results["regex"] = get_regex_ranges()
-    results["bl"] = get_bl_ranges()
-
-    return results
-
-
-async def get_all_rangesv0(
-    updater_config: Optional[Dict[str, Any]] = {},
-    client_config: Optional[Dict[str, Any]] = {},
-    force_refresh: bool = False,
-) -> Dict[str, Dict[str, List[str]]]:
-    results = {}
-
-    tasks = [
-        (
-            "asn",
-            get_asn_ranges_by_name(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "aws",
-            get_aws_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "azure",
-            get_azure_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "blocklist_de",
-            get_blocklist_de(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "cloudflare",
-            get_cloudflare_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "digitalocean",
-            get_digitalocean_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "forcepoint",
-            get_forcepoint_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "fortinet",
-            get_fortinet_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "github",
-            get_github_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "google",
-            get_google_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "ipsum",
-            get_ipsum_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "isc",
-            get_isc_thread_category(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "jlang",
-            get_jlang_htaccess(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "linode",
-            get_linode_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "microsoft",
-            get_microsoft_public_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "microsoft_eop",
-            get_microsoft_eop_ranges(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "others",
-            get_other_asn_ranges(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "paloalto",
-            get_paloalto_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "symantec",
-            get_symantec_ranges(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "tor_exit_nodes",
-            get_tor_exit_nodes(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "tags",
-            get_multiple_tag_ranges(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-        (
-            "zscaler",
-            get_zscaler_ips(
-                updater_config=updater_config,
-                client_config=client_config,
-                force_refresh=force_refresh,
-            ),
-        ),
-    ]
 
     completed = await asyncio.gather(*[t[1] for t in tasks], return_exceptions=True)
 

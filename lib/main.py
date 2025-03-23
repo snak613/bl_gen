@@ -9,10 +9,12 @@ import aiofiles
 from aggregate_prefixes import aggregate_prefixes
 from loguru import logger
 
-from .blacklist import get_all_ranges, get_cloudflare_ips
+from . import get_all_ranges
+from .ips import get_cloudflare_ips
 from .utils import get_module_dir, save_json_async, sort_ips
 
-STATIC_DIR = get_module_dir() / "static" / "blacklist"
+STATIC_DIR = get_module_dir() / "static" / "jsons"
+
 
 SERVICE_GROUPS = {
     "google",
@@ -223,194 +225,6 @@ class IPManager:
         return sorted(self._processed_data.keys())
 
 
-class IPManagerV0:
-    def __init__(
-        self,
-        always_flatten: List[str] = [],
-        flatten_service_groups: bool = False,
-        service_groups: Optional[Set[str]] = None,
-        client_options: Dict[str, Any] = None,
-        updater_config: Dict[str, Any] = None,
-    ):
-        self.service_groups = service_groups or SERVICE_GROUPS
-        self.always_flatten = always_flatten or ALWAYS_FLATTEN.copy()
-        self.flatten_service_groups = flatten_service_groups
-        self.client_options = client_options or {}
-        self.updater_config = updater_config or {}
-
-        self._processed_data: Dict[str, Dict[str, List[str]]] = {}
-        self._raw_data: Dict[str, Any] = {}
-
-    async def initialize(self, force_refresh: bool = False):
-        self._raw_data = await get_all_ranges(
-            updater_config=self.updater_config,
-            client_config=self.client_options,
-            force_refresh=force_refresh,
-        )
-        self._processed_data = self._process_data()
-        logger.info(f"Initialized with {len(self._raw_data)} data sources")
-
-    def _merge_ip_lists(self, lists: List[List[str]]) -> List[str]:
-        combined = set()
-        for lst in lists:
-            combined.update(lst)
-        return sort_ips(list(combined))
-
-    def _flatten_nested_data(
-        self, data: Dict[str, Dict], parent_prefix: str = ""
-    ) -> Dict[str, Dict[str, List[str]]]:
-        flattened = {}
-
-        for key, value in data.items():
-            if not isinstance(value, dict):
-                continue
-
-            if "ipv4" in value or "ipv6" in value:
-                group_name = f"{parent_prefix}_{key}".lstrip("_")
-                flattened[group_name] = {
-                    "ipv4": value.get("ipv4", []),
-                    "ipv6": value.get("ipv6", []),
-                }
-            else:
-                nested = self._flatten_nested_data(value, key)
-                flattened.update(nested)
-
-        return flattened
-
-    def _aggregate_ips(self, ips: List[str], is_v4: bool = True) -> List[str]:
-        if not ips:
-            return []
-
-        aggregated = aggregate_prefixes(ips)
-        mask = "/32" if is_v4 else "/128"
-        return [
-            str(ip).replace(mask, "") if str(ip).endswith(mask) else str(ip)
-            for ip in aggregated
-        ]
-
-    def _process_data(self) -> Dict[str, Dict[str, List[str]]]:
-        logger.info("Processing IP range data...")
-        processed = defaultdict(lambda: {"ipv4": [], "ipv6": []})
-
-        for source, data in self._raw_data.items():
-            if not isinstance(data, dict):
-                continue
-
-            if source in self.always_flatten:
-                logger.info(f"Flattening {source} data")
-                flattened = self._flatten_nested_data(data)
-                for group, ranges in flattened.items():
-                    for version in ("ipv4", "ipv6"):
-                        processed[group][version].extend(ranges.get(version, []))
-
-            elif source in self.service_groups:
-                if self.flatten_service_groups:
-                    logger.debug(f"Flattening {source} services")
-                    flattened = self._flatten_nested_data(data, source)
-                    processed.update(flattened)
-                else:
-                    logger.debug(f"Keeping {source} services grouped")
-
-                    for subgroup_data in data.values():
-                        if isinstance(subgroup_data, dict):
-                            for version in ("ipv4", "ipv6"):
-                                processed[source][version].extend(
-                                    subgroup_data.get(version, [])
-                                )
-
-            else:
-                # Handle both direct and nested structures
-                if "ipv4" in data or "ipv6" in data:
-                    # Direct ipv4/ipv6 structure
-                    for version in ("ipv4", "ipv6"):
-                        processed[source][version].extend(data.get(version, []))
-                else:
-                    for _, subgroup_data in data.items():
-                        if isinstance(subgroup_data, dict):
-                            if "ipv4" in subgroup_data or "ipv6" in subgroup_data:
-                                for version in ("ipv4", "ipv6"):
-                                    processed[source][version].extend(
-                                        subgroup_data.get(version, [])
-                                    )
-
-        final_processed = {}
-        for group, ranges in processed.items():
-            if ranges["ipv4"] or ranges["ipv6"]:
-                final_processed[group] = {
-                    "ipv4": sort_ips(list(set(ranges["ipv4"]))),
-                    "ipv6": sort_ips(list(set(ranges["ipv6"]))),
-                }
-
-        logger.info(
-            f"Processed {len(self._raw_data)} sources into {len(final_processed)} groups"
-        )
-        return final_processed
-
-    def get_ranges(
-        self,
-        exclude_groups: Optional[List[str]] = None,
-        exclude_ips: Optional[List[str]] = None,
-        include_only: Optional[List[str]] = None,
-        aggregate: bool = True,
-    ) -> Dict[str, List[str]]:
-        """
-        Get IP ranges with exclusions and inclusions applied
-
-        Args:
-            exclude_groups: List of group names to exclude
-            exclude_ips: List of specific IPs to exclude
-            include_only: List of groups to include (excludes all others)
-        """
-        exclude_groups = set(exclude_groups or [])
-        exclude_ips = set(exclude_ips or [])
-        include_only = set(include_only or [])
-
-        result = {"ipv4": set(), "ipv6": set()}
-
-        for group, ranges in self._processed_data.items():
-            if exclude_groups and group in exclude_groups:
-                logger.info(f"Excluding group: {group}")
-                continue
-
-            if include_only and group not in include_only:
-                continue
-
-            for version in ("ipv4", "ipv6"):
-                if version in ranges:
-                    result[version].update(
-                        ip for ip in ranges[version] if ip not in exclude_ips
-                    )
-
-        logger.info(
-            f"Found {len(result.get('ipv4', []))} IPv4 and {len(result.get('ipv6', []))} IPv6 addresses"
-        )
-
-        if aggregate:
-            ipv4_ranges = self._aggregate_ips(list(result["ipv4"]), is_v4=True)
-            ipv6_ranges = self._aggregate_ips(list(result["ipv6"]), is_v4=False)
-            logger.info(
-                f"After aggregation {len(ipv4_ranges)} IPv4 and {len(ipv6_ranges)} IPv6 addresses"
-            )
-
-        else:
-            ipv4_ranges = sort_ips(list(result["ipv4"]))
-            ipv6_ranges = sort_ips(list(result["ipv6"]))
-
-        return {"ipv4": ipv4_ranges, "ipv6": ipv6_ranges}
-
-    def get_group_info(self) -> Dict[str, Dict[str, int]]:
-        info = {}
-        for group, ranges in self.processed_data.items():
-            info[group] = {
-                "ipv4_count": len(ranges.get("ipv4", [])),
-                "ipv6_count": len(ranges.get("ipv6", [])),
-            }
-        return info
-
-    def get_available_groups(self) -> List[str]:
-        return sorted(list(self.processed_data.keys()))
-
-
 class RedirectRulesManager:
     def __init__(self, config: Dict[str, Any], persist: bool = True):
         self.config = config
@@ -613,7 +427,8 @@ class RedirectRulesManager:
 
 
 async def process_ip_ranges(
-    ip_config, out_dir: Optional[Path] = None,
+    ip_config,
+    out_dir: Optional[Path] = None,
 ) -> Dict[str, Any]:
     try:
         exclude_groups = ip_config.get("exclude_groups", [])
@@ -681,7 +496,7 @@ async def process_redirect_rules(
     return redirect_rules
 
 
-async def process_blacklist(config: Dict[str, Any]) -> Dict[str, Any]:
+async def process_ips(config: Dict[str, Any]) -> Dict[str, Any]:
     out_dir = config.get("general", {}).get("out_dir")
     out_dir = Path(out_dir).expanduser().resolve()
     if not out_dir.exists():
