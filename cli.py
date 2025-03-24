@@ -25,6 +25,7 @@ async def main():
         config["general"]["out_dir"] = args.out
     if args.force_refresh:
         config["general"]["force_refresh"] = args.force_refresh
+    
     await process_ips(config)
 
 

@@ -1,13 +1,6 @@
 {
     "messages": [
         [
-<<<<<<< HEAD
-=======
-            "warning",
-            "Latest available results are 28 hours old."
-        ],
-        [
->>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
             "info",
             "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
         ]
@@ -16,51 +9,30 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": false,
+    "cached": true,
     "data": {
         "prefixes": [
             {
                 "prefix": "2a01:110:e050::/48",
                 "timelines": [
                     {
-<<<<<<< HEAD
-                        "starttime": "2025-03-09T16:00:00",
-                        "endtime": "2025-03-23T16:00:00"
-=======
-                        "starttime": "2025-03-08T00:00:00",
-                        "endtime": "2025-03-22T00:00:00"
->>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
+                        "starttime": "2025-03-10T00:00:00",
+                        "endtime": "2025-03-24T00:00:00"
                     }
                 ]
             }
         ],
-<<<<<<< HEAD
-        "query_starttime": "2025-03-09T16:00:00",
-        "query_endtime": "2025-03-23T16:00:00",
+        "query_starttime": "2025-03-10T00:00:00",
+        "query_endtime": "2025-03-24T00:00:00",
         "resource": "6584",
-        "latest_time": "2025-03-23T16:00:00",
+        "latest_time": "2025-03-24T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250324030544-2f8e89ed-4592-4cbf-969f-6c75ee6f1f5a",
-    "process_time": 23,
-    "server_id": "app177",
+    "query_id": "20250324035502-ef132a3e-5bd9-4e05-97b7-435a0fed4b9f",
+    "process_time": 1,
+    "server_id": "app190",
     "build_version": "main-2025.03.18",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-03-24T03:05:44.251985"
-=======
-        "query_starttime": "2025-03-08T00:00:00",
-        "query_endtime": "2025-03-22T00:00:00",
-        "resource": "6584",
-        "latest_time": "2025-03-22T00:00:00",
-        "earliest_time": "2000-08-01T00:00:00"
-    },
-    "query_id": "20250323040027-cf47d488-f24c-44f6-b377-9f8f8058acce",
-    "process_time": 19,
-    "server_id": "app198",
-    "build_version": "main-2025.03.18",
-    "status": "ok",
-    "status_code": 200,
-    "time": "2025-03-23T04:00:27.520577"
->>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
+    "time": "2025-03-24T03:55:02.116255"
 }
