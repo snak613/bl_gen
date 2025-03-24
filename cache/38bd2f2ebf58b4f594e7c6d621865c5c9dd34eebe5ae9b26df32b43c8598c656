@@ -37,6 +37,7 @@
         "latest_time": "2025-03-24T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
+<<<<<<< HEAD
     "query_id": "20250324035502-63be6552-c843-46e6-88fb-cc5dbde1e011",
     "process_time": 1,
     "server_id": "app171",
@@ -44,4 +45,13 @@
     "status": "ok",
     "status_code": 200,
     "time": "2025-03-24T03:55:02.099527"
+=======
+    "query_id": "20250324034924-deee93ba-0138-4877-ad12-9551ea6b7b48",
+    "process_time": 1,
+    "server_id": "app188",
+    "build_version": "main-2025.03.18",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2025-03-24T03:49:24.804381"
+>>>>>>> d512a59cb270c348158797b1070aef1cc8aa8277
 }
