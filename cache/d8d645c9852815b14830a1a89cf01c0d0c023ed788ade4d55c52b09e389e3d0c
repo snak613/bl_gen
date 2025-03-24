@@ -1,13 +1,6 @@
 {
     "messages": [
         [
-<<<<<<< HEAD
-=======
-            "warning",
-            "Latest available results are 28 hours old."
-        ],
-        [
->>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
             "info",
             "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
         ]
@@ -19,33 +12,17 @@
     "cached": false,
     "data": {
         "prefixes": [],
-<<<<<<< HEAD
-        "query_starttime": "2025-03-09T16:00:00",
-        "query_endtime": "2025-03-23T16:00:00",
+        "query_starttime": "2025-03-10T00:00:00",
+        "query_endtime": "2025-03-24T00:00:00",
         "resource": "6182",
-        "latest_time": "2025-03-23T16:00:00",
+        "latest_time": "2025-03-24T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250324030544-54cf3aa6-3a33-4194-881e-7153efa2ac50",
+    "query_id": "20250324033943-112ba0e5-ddc9-468c-99cd-cfddc50d070a",
     "process_time": 13,
-    "server_id": "app174",
+    "server_id": "app165",
     "build_version": "main-2025.03.18",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-03-24T03:05:44.228748"
-=======
-        "query_starttime": "2025-03-08T00:00:00",
-        "query_endtime": "2025-03-22T00:00:00",
-        "resource": "6182",
-        "latest_time": "2025-03-22T00:00:00",
-        "earliest_time": "2000-08-01T00:00:00"
-    },
-    "query_id": "20250323040027-47158409-d058-4178-92ee-7405f5f1d915",
-    "process_time": 13,
-    "server_id": "app197",
-    "build_version": "main-2025.03.18",
-    "status": "ok",
-    "status_code": 200,
-    "time": "2025-03-23T04:00:27.509816"
->>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
+    "time": "2025-03-24T03:39:43.896222"
 }
