@@ -429,6 +429,7 @@ class RedirectRulesManager:
 async def process_ip_ranges(
     ip_config,
     out_dir: Optional[Path] = None,
+    force_refresh: bool = False
 ) -> Dict[str, Any]:
     try:
         exclude_groups = ip_config.get("exclude_groups", [])
@@ -441,7 +442,7 @@ async def process_ip_ranges(
             excluded_ips = [*cdn_ips.get("ipv4", []), *cdn_ips.get("ipv6", [])]
 
         ip_manager = IPManager(config=ip_config)
-        await ip_manager.initialize()
+        await ip_manager.initialize(force_refresh=force_refresh)
         ip_ranges = ip_manager.get_ranges(
             exclude_ips=excluded_ips, exclude_groups=exclude_groups
         )
@@ -498,13 +499,15 @@ async def process_redirect_rules(
 
 async def process_ips(config: Dict[str, Any]) -> Dict[str, Any]:
     out_dir = config.get("general", {}).get("out_dir")
+    
     out_dir = Path(out_dir).expanduser().resolve()
     if not out_dir.exists():
         logger.debug(f"Output directory '{out_dir}' does not exist. Creating it...")
         out_dir.mkdir(parents=True, exist_ok=True)
 
+    force_refresh = config.get("general", {}).get("force_refresh")
     tasks = [
-        process_ip_ranges(config.get("ip_ranges"), out_dir=out_dir),
+        process_ip_ranges(config.get("ip_ranges"), out_dir=out_dir, force_refresh=force_refresh),
         process_redirect_rules(config.get("redirect_rules"), out_dir=out_dir),
     ]
     result = await asyncio.gather(*tasks)

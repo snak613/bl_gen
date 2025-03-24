@@ -11,6 +11,7 @@ from appdirs import user_cache_dir
 from http_client import AioHttpClient, ClientConfig, ClientType, RetryErrorResult
 from loguru import logger
 from tenacity import RetryError
+import os
 
 
 def url_to_filename(url):
@@ -165,7 +166,15 @@ class ResourceUpdater:
                     logger.info(
                         f"Received {HTTPStatus.NOT_MODIFIED}, Cache valid for {self.url}"
                     )
-                    return self._load_from_cache()
+                    cached_data = self._load_from_cache()
+                    self._update_memory_cache(cached_data)  # This updates the expiry time
+
+                    if self._writable and self.resource_path.exists():
+                        current_time = time.time()
+                        os.utime(self.resource_path, (current_time, current_time))
+                
+                    return cached_data
+                   
 
                 if response.status_code == HTTPStatus.OK:
                     data = response.content

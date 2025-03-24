@@ -1,6 +1,6 @@
 [general]
 out_dir = "out" # Leave empty to default to current directory, will be created if not exist
-force_refresh = false
+force_refresh = true
 
 
 [ip_ranges]

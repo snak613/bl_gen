@@ -13,6 +13,8 @@ def get_args():
         "--config", "-c", help="path to config", type=Path, default=DEFAULT_CONFIG_DIR
     )
     parser.add_argument("--out", "-o", help="directory to store artifacts", type=Path)
+    parser.add_argument("--force-refresh", "-f", action="store_true", help="Force refresh resources ignoring cache")
+
     return parser.parse_args()
 
 
@@ -21,6 +23,8 @@ async def main():
     config = load_config(args.config)
     if args.out:
         config["general"]["out_dir"] = args.out
+    if args.force_refresh:
+        config["general"]["force_refresh"] = args.force_refresh
     await process_ips(config)
 
 
