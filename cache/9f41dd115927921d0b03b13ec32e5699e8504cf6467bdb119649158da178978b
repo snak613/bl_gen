@@ -1,6 +1,13 @@
 {
     "messages": [
         [
+<<<<<<< HEAD
+=======
+            "warning",
+            "Latest available results are 28 hours old."
+        ],
+        [
+>>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
             "info",
             "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
         ]
@@ -9,6 +16,7 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
+<<<<<<< HEAD
     "cached": true,
     "data": {
         "prefixes": [
@@ -36,6 +44,17 @@
                     {
                         "starttime": "2025-03-09T16:00:00",
                         "endtime": "2025-03-23T16:00:00"
+=======
+    "cached": false,
+    "data": {
+        "prefixes": [
+            {
+                "prefix": "2404:f801:8020::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-03-08T00:00:00",
+                        "endtime": "2025-03-22T00:00:00"
+>>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
                     }
                 ]
             },
@@ -43,12 +62,36 @@
                 "prefix": "167.220.226.0/23",
                 "timelines": [
                     {
+<<<<<<< HEAD
                         "starttime": "2025-03-09T16:00:00",
                         "endtime": "2025-03-23T16:00:00"
+=======
+                        "starttime": "2025-03-08T00:00:00",
+                        "endtime": "2025-03-22T00:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "2404:f801:802c::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-03-08T00:00:00",
+                        "endtime": "2025-03-22T00:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "167.220.227.0/24",
+                "timelines": [
+                    {
+                        "starttime": "2025-03-08T00:00:00",
+                        "endtime": "2025-03-22T00:00:00"
+>>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
                     }
                 ]
             }
         ],
+<<<<<<< HEAD
         "query_starttime": "2025-03-09T16:00:00",
         "query_endtime": "2025-03-23T16:00:00",
         "resource": "45139",
@@ -62,4 +105,19 @@
     "status": "ok",
     "status_code": 200,
     "time": "2025-03-24T03:05:52.279768"
+=======
+        "query_starttime": "2025-03-08T00:00:00",
+        "query_endtime": "2025-03-22T00:00:00",
+        "resource": "45139",
+        "latest_time": "2025-03-22T00:00:00",
+        "earliest_time": "2000-08-01T00:00:00"
+    },
+    "query_id": "20250323040027-d74ad6b5-40d0-47a0-ae30-bbe88e6c0be9",
+    "process_time": 18,
+    "server_id": "app165",
+    "build_version": "main-2025.03.18",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2025-03-23T04:00:27.569167"
+>>>>>>> b05ca8f6fd66c08d373c40dd8c16366e25ad178b
 }
