@@ -27,7 +27,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run update script
-        run: python cli.py
+        run: python cli.py -f
 
       - name: Make commit script executable
         run: chmod +x commit.sh
