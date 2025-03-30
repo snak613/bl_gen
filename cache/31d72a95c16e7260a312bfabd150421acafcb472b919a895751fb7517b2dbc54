@@ -5057,11 +5057,11 @@
         "latest_time": "2025-03-30T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250330171705-95e553d4-6991-41fb-a3c4-7fa4b8c3d77a",
-    "process_time": 305,
-    "server_id": "app189",
+    "query_id": "20250330173853-1372d073-7661-407c-aaf0-c715212fd2d4",
+    "process_time": 359,
+    "server_id": "app192",
     "build_version": "main-2025.03.28",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-03-30T17:17:06.046089"
+    "time": "2025-03-30T17:38:54.199686"
 }
