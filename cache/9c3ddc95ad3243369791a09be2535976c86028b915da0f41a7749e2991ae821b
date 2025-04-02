@@ -7821,11 +7821,11 @@
         "latest_time": "2025-04-02T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250402182836-1d921e5a-6ec9-4614-b0f9-12dfe9c206b4",
-    "process_time": 485,
-    "server_id": "app188",
+    "query_id": "20250402184910-9a38b142-dc04-4484-b816-837cef722cdd",
+    "process_time": 423,
+    "server_id": "app171",
     "build_version": "main-2025.03.28",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-02T18:28:37.322352"
+    "time": "2025-04-02T18:49:10.431840"
 }
