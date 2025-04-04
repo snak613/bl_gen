@@ -35,7 +35,7 @@
         <title>IP address ranges for Email Symantec.cloud</title>
         <link rel="icon" type="image/x-icon" href="https://knowledge.broadcom.com/broadcom-log.png">
         <meta name="description" content="  ">
-        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","name":"Email Security.cloud","alternateName":"Email Security.cloud","datePublished":"01-17-2025 07:12","dateModified":"01-17-2025 07:12","mainEntityOfPage":{"@type":"Webpage","URL":"https://knowledge.broadcom.com/external/article/150693"},"keywords":"N/A","url":"https://knowledge.broadcom.com/external/article/150693"},"author":"Broadcom Inc","headline":"IP address ranges for Email Symantec.cloud","publisher":{"@type":"Organization","name":"Broadcom Inc","logo":{"@type":"ImageObject","url":""}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"","ratingCount":""}}
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","name":"Email Security.cloud","alternateName":"Email Security.cloud","datePublished":"03-10-2025 22:20","dateModified":"03-10-2025 22:20","mainEntityOfPage":{"@type":"Webpage","URL":"https://knowledge.broadcom.com/external/article/150693"},"keywords":"N/A","url":"https://knowledge.broadcom.com/external/article/150693"},"author":"Broadcom Inc","headline":"IP address ranges for Email Symantec.cloud","publisher":{"@type":"Organization","name":"Broadcom Inc","logo":{"@type":"ImageObject","url":""}},"aggregateRating":{"@type":"AggregateRating","ratingValue":"","ratingCount":""}}
         </script>
         <link rel="canonical" href="https://knowledge.broadcom.com/external/article/150693/ip-address-ranges-for-email-symantecclou.html">
 
@@ -1038,7 +1038,7 @@
               }, 1000);
 
             var date = document.getElementById('date_time');
-            var d = '01-17-2025 07:12';
+            var d = '03-10-2025 22:20';
             date.innerHTML = d;
             date.innerHTML = d.split(' ')[0];
 
