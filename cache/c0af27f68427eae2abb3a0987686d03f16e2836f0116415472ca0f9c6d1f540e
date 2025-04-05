@@ -199,6 +199,7 @@
 
             .article-updated-time {
                 flex: 0 0 auto;
+                align-items: center;
             }
 
             .article-updated-date-icon {
@@ -750,7 +751,7 @@
 
                     </div>
                     <div class="article-header-info">
-                        <div class="flex-row article-updated-time">
+                        <div class="flex-row row-gap-8 article-updated-time">
                             <span class="material-icons article-updated-date-icon">book</span>
                             <h4 class="wolken-h4">Article ID: 150693</h4>
                         </div>
@@ -1117,25 +1118,27 @@
             saveArticleCount('views');
         }
 
-        function getFeedbackConfig() {
-            var articleFeedbackConfigRequest = new XMLHttpRequest();
-            articleFeedbackConfigRequest.open('GET', apiDomain + 'es/nau/feedback/config');
-            if(kb_public_page_domain){
-                articleFeedbackConfigRequest.setRequestHeader("domain", kb_public_page_domain);
-            }
-            articleFeedbackConfigRequest.send();
-            articleFeedbackConfigRequest.onload = function() {
-                if (articleFeedbackConfigRequest.status == 200) {
-                    var response = JSON.parse(articleFeedbackConfigRequest.response);
-                    if (response && response.data && response.data.feedbackConfigData) {
-                        feedbackConfigData = response.data.feedbackConfigData;
-                        document.getElementById('feedback_actionMsg').innerHTML = feedbackConfigData.actionMsg;
-                    } else {
-                        document.getElementsByClassName('feedback-section')[0].remove();
-                    }
+    function getFeedbackConfig() {
+        if (kb_public_page_domain) {
+        var articleFeedbackConfigRequest = new XMLHttpRequest();
+        articleFeedbackConfigRequest.open('GET', apiDomain + 'es/nau/feedback/config');
+            articleFeedbackConfigRequest.setRequestHeader("domain", kb_public_page_domain);
+        articleFeedbackConfigRequest.send();
+        articleFeedbackConfigRequest.onload = function () {
+            if (articleFeedbackConfigRequest.status == 200) {
+                var response = JSON.parse(articleFeedbackConfigRequest.response);
+                if (response && response.data && response.data.feedbackConfigData) {
+                    feedbackConfigData = response.data.feedbackConfigData;
+                    document.getElementById('feedback_actionMsg').innerHTML = feedbackConfigData.actionMsg;
+                } else {
+                    document.getElementsByClassName('feedback-section')[0].remove();
                 }
-            };
-        }
+            }
+        };
+    } else {
+        console.log('Error! KB public domain is not configrued.');
+    }
+    }
 
         function saveArticleCount(countType) {
             var data = {
@@ -1147,17 +1150,19 @@
             var formData = new FormData();
             formData.append('data', JSON.stringify(data));
 
-            var articleLikeRequest = new XMLHttpRequest();
-            articleLikeRequest.open('POST', apiDomain + 'es/nau/feedback/feedback_count');
-            if(kb_public_page_domain){
-                articleLikeRequest.setRequestHeader("domain", kb_public_page_domain);
+        if (kb_public_page_domain) {
+        var articleLikeRequest = new XMLHttpRequest();
+        articleLikeRequest.open('POST', apiDomain + 'es/nau/feedback/feedback_count');
+            articleLikeRequest.setRequestHeader("domain", kb_public_page_domain);
+        articleLikeRequest.send(formData);
+        articleLikeRequest.onload = function () {
+            if (articleLikeRequest.status == 200) {
             }
-            articleLikeRequest.send(formData);
-            articleLikeRequest.onload = function() {
-                if (articleLikeRequest.status == 200) {
-                }
-            };
-        }
+        };
+    } else {
+        console.log('Error! KB public domain is not configrued.');
+    }
+    }
 
         function saveArticleViewCountHistory() {
             let articleViewData = new FormData();
@@ -1166,19 +1171,21 @@
                 "countType":"VIEWS"
             }));
 
-            var articleViewRequest = new XMLHttpRequest();
-            articleViewRequest.open('POST', apiDomain + 'es/nau/count/save_article_count');
-            if(kb_public_page_domain){
-                articleViewRequest.setRequestHeader("domain", kb_public_page_domain);
+        if (kb_public_page_domain) {
+        var articleViewRequest = new XMLHttpRequest();
+        articleViewRequest.open('POST', apiDomain + 'es/nau/count/save_article_count');
+            articleViewRequest.setRequestHeader("domain", kb_public_page_domain);
+        //articleViewRequest.withCredentials = true;
+        articleViewRequest.send(articleViewData);
+        articleViewRequest.onload = function () {
+            if (articleViewRequest.status == 200) {
+                console.log(articleViewRequest.response);
             }
-            //articleViewRequest.withCredentials = true;
-            articleViewRequest.send(articleViewData);
-            articleViewRequest.onload = function() {
-                if (articleViewRequest.status == 200) {
-                    console.log(articleViewRequest.response);
-                }
-            };
-        }
+        };
+    } else {
+        console.log('Error! KB public domain is not configrued.');
+    }
+    }
 
         function onArticleLike() {
             try {
