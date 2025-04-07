@@ -617,7 +617,7 @@
                                         data-trigger="hover">ASN type</span>
                                     </td>
                                     <td>
-                                        Business
+                                        Hosting
                                     </td>
                                 </tr>
                                 <tr>
@@ -1963,9 +1963,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS10995</h4>
-                        <p class="opacity-100">PNC Bank N.A.</p>
-                        <a href="/AS10995" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS19105</h4>
+                        <p class="opacity-100">FirstBank</p>
+                        <a href="/AS19105" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -1974,9 +1974,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS13431</h4>
-                        <p class="opacity-100">Millennium Partners, L.P.</p>
-                        <a href="/AS13431" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS22667</h4>
+                        <p class="opacity-100">Vista Broadband Networks, Inc.</p>
+                        <a href="/AS22667" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -1985,9 +1985,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS163</h4>
-                        <p class="opacity-100">IBM</p>
-                        <a href="/AS163" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS26017</h4>
+                        <p class="opacity-100">Bettendorf Public Library</p>
+                        <a href="/AS26017" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -1996,9 +1996,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS18907</h4>
-                        <p class="opacity-100">Colovore LLC</p>
-                        <a href="/AS18907" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS27497</h4>
+                        <p class="opacity-100">CenturyLink Communications, LLC</p>
+                        <a href="/AS27497" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2007,9 +2007,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS22771</h4>
-                        <p class="opacity-100">The Common Fund</p>
-                        <a href="/AS22771" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS30358</h4>
+                        <p class="opacity-100">SHC Direct, LLC</p>
+                        <a href="/AS30358" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2018,9 +2018,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS29739</h4>
-                        <p class="opacity-100">Neopolitan Networks</p>
-                        <a href="/AS29739" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS32042</h4>
+                        <p class="opacity-100">I FIX FOR U</p>
+                        <a href="/AS32042" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2257,7 +2257,7 @@ Source:         AAAA
                     "ALLOCATED: 2012-03-13T00:00:00+00:00",
                     "REGISTRY: arin",
                     "IP ADDRESSES: 4608",
-                    "TYPE: business"
+                    "TYPE: hosting"
                 ]
             },
             "image": "https://ipinfo.io/static/images/layout/logo.svg",
@@ -2289,7 +2289,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMjUuMTkzLjE3Ng%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MTcyLjIwNi40NC44NA%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
