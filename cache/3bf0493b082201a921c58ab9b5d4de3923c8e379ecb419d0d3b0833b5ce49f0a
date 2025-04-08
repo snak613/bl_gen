@@ -588,7 +588,7 @@
                                         data-trigger="hover">Number of IPv4</span>
                                     </td>
                                     <td>
-                                        49,152
+                                        53,504
                                     </td>
                                 </tr>
 
@@ -6245,7 +6245,7 @@ Source:         AAAA
                     "COUNTRY: United States",
                     "ALLOCATED: 2008-05-29T00:00:00+00:00",
                     "REGISTRY: arin",
-                    "IP ADDRESSES: 49152",
+                    "IP ADDRESSES: 53504",
                     "TYPE: hosting"
                 ]
             },
@@ -6278,7 +6278,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NDAuMTIyLjI1MS4xODg%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuNTEuMTU1LjIwOA%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
