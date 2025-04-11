@@ -5215,11 +5215,11 @@
         "latest_time": "2025-04-11T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250411174043-7cacfb9a-74e3-484d-9eb7-7e8cc40727bb",
-    "process_time": 305,
-    "server_id": "app191",
+    "query_id": "20250411182814-8e84e42a-6bdf-41de-8b44-336ffeeefb56",
+    "process_time": 284,
+    "server_id": "app179",
     "build_version": "main-2025.04.03",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-11T17:40:44.245322"
+    "time": "2025-04-11T18:28:14.906667"
 }
