@@ -8045,11 +8045,11 @@
         "latest_time": "2025-04-12T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250412221805-d2ecf7b0-db72-4f54-be97-6ad92658f5e9",
-    "process_time": 6,
-    "server_id": "app185",
+    "query_id": "20250412224008-55ead750-abba-4e65-a418-ecf0b370d47e",
+    "process_time": 5,
+    "server_id": "app189",
     "build_version": "main-2025.04.03",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-12T22:18:05.605022"
+    "time": "2025-04-12T22:40:08.241745"
 }
