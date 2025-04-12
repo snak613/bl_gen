@@ -5251,11 +5251,11 @@
         "latest_time": "2025-04-12T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250412213757-f70d4e8f-2e2a-48bf-8290-c535c154b4ee",
-    "process_time": 306,
-    "server_id": "app193",
+    "query_id": "20250412221805-5fbbdab7-f126-4f7f-b836-a61704a2e9e8",
+    "process_time": 280,
+    "server_id": "app194",
     "build_version": "main-2025.04.03",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-12T21:37:57.529515"
+    "time": "2025-04-12T22:18:05.881964"
 }
