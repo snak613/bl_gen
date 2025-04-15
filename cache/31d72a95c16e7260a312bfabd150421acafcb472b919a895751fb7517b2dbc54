@@ -5264,11 +5264,11 @@
         "latest_time": "2025-04-15T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250415164633-226d6ee1-5669-43ca-a6e9-dce9d03a0756",
-    "process_time": 307,
-    "server_id": "app190",
+    "query_id": "20250415171815-bc18b61d-1a9a-410b-976b-bbba85e81c31",
+    "process_time": 265,
+    "server_id": "app189",
     "build_version": "main-2025.04.15",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-15T16:46:33.325835"
+    "time": "2025-04-15T17:18:15.939476"
 }
