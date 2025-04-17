@@ -8072,11 +8072,11 @@
         "latest_time": "2025-04-16T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250417030347-ccdb7e54-c2e0-4daa-a157-9478792d1ee0",
-    "process_time": 7,
-    "server_id": "app163",
+    "query_id": "20250417035050-11341fbe-226a-46b7-b695-8b9309db4cf4",
+    "process_time": 5,
+    "server_id": "app178",
     "build_version": "main-2025.04.15",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-17T03:03:47.017188"
+    "time": "2025-04-17T03:50:50.007602"
 }
