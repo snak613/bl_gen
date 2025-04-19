@@ -18,11 +18,11 @@
         "latest_time": "2025-04-19T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250419113734-9f06dc88-cae0-4f43-af00-992af6b3e82f",
-    "process_time": 19,
-    "server_id": "app175",
+    "query_id": "20250419123617-d2ddd0ba-7ee0-4d57-ab5c-26f3c9721db8",
+    "process_time": 11,
+    "server_id": "app170",
     "build_version": "main-2025.04.15",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-19T11:37:34.779501"
+    "time": "2025-04-19T12:36:17.249401"
 }
