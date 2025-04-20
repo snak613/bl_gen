@@ -617,7 +617,7 @@
                                         data-trigger="hover">ASN type</span>
                                     </td>
                                     <td>
-                                        Business
+                                        Hosting
                                     </td>
                                 </tr>
                                 <tr>
@@ -5942,7 +5942,7 @@ Source:         AAAA
                     "ALLOCATED: 2008-01-22T00:00:00+00:00",
                     "REGISTRY: ripe",
                     "IP ADDRESSES: 48896",
-                    "TYPE: business"
+                    "TYPE: hosting"
                 ]
             },
             "image": "https://ipinfo.io/static/images/layout/logo.svg",
@@ -5974,7 +5974,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMjQ2Ljc5LjExOA%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMjQ2Ljc5LjY3" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
