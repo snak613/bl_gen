@@ -5513,11 +5513,11 @@
         "latest_time": "2025-04-20T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250420064715-12b8c9e8-c0c2-40b0-89ea-d6be174476fb",
-    "process_time": 313,
-    "server_id": "app197",
+    "query_id": "20250420071845-2df649e4-a6e2-4f81-b7cb-b2936480088c",
+    "process_time": 294,
+    "server_id": "app199",
     "build_version": "main-2025.04.15",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-20T06:47:15.669376"
+    "time": "2025-04-20T07:18:45.774282"
 }
