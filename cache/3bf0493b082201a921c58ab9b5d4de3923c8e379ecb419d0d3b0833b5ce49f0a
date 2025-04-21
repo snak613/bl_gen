@@ -3473,7 +3473,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 441 peers
+                                    are 440 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -3902,24 +3902,6 @@ Source:         AAAA
                 <td>
                     
                         Network Solutions Group Pty Ltd
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS13285"
-                        class="charcoal-link "
-                        >AS13285</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        TalkTalk Communications Limited
                     
                 </td>
                 
@@ -5293,6 +5275,24 @@ Source:         AAAA
                 
             </tr>
             
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
+                        <a href="/AS20080"
+                        class="charcoal-link "
+                        >AS20080</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Florida International University
+                    
+                </td>
+                
+            </tr>
+            
         </tbody>
     </table>
 
@@ -5970,9 +5970,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS12062</h4>
-                        <p class="opacity-100">Decision One</p>
-                        <a href="/AS12062" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS18843</h4>
+                        <p class="opacity-100">Crossmark</p>
+                        <a href="/AS18843" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5981,9 +5981,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS15354</h4>
-                        <p class="opacity-100">Morgan, Lewis &amp; Bockius LLP</p>
-                        <a href="/AS15354" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS19406</h4>
+                        <p class="opacity-100">Towerstream I, Inc.</p>
+                        <a href="/AS19406" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5992,9 +5992,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS206846</h4>
-                        <p class="opacity-100">Voximplant, Inc.</p>
-                        <a href="/AS206846" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS20123</h4>
+                        <p class="opacity-100">NOS Network Operations Group</p>
+                        <a href="/AS20123" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6003,9 +6003,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS23177</h4>
-                        <p class="opacity-100">Thomas &amp; Betts Corporation</p>
-                        <a href="/AS23177" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS21343</h4>
+                        <p class="opacity-100">Internet Invest, Ltd.</p>
+                        <a href="/AS21343" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6014,9 +6014,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS30702</h4>
-                        <p class="opacity-100">Dymin Systems, Inc.</p>
-                        <a href="/AS30702" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS23035</h4>
+                        <p class="opacity-100">Fareportal</p>
+                        <a href="/AS23035" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6025,9 +6025,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS398211</h4>
-                        <p class="opacity-100">IonQ, Inc.</p>
-                        <a href="/AS398211" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS393490</h4>
+                        <p class="opacity-100">Verizon Business</p>
+                        <a href="/AS393490" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6296,7 +6296,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NDAuMTIyLjI1Mi4yNDA%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NDAuMTIyLjI1My4xMjY%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
