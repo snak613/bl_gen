@@ -5509,11 +5509,11 @@
         "latest_time": "2025-04-27T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250427035133-cd8e40a2-4d03-4dff-b619-08192a9674bc",
-    "process_time": 321,
-    "server_id": "app184",
+    "query_id": "20250427042336-0b464efc-bd3c-438a-9b79-818988060768",
+    "process_time": 308,
+    "server_id": "app196",
     "build_version": "main-2025.04.15",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-27T03:51:33.668124"
+    "time": "2025-04-27T04:23:36.879422"
 }
