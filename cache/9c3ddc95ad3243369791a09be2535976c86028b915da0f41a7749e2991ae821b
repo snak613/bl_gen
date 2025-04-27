@@ -8014,11 +8014,11 @@
         "latest_time": "2025-04-27T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250427123707-9bc9d116-ca48-4f6e-8f68-9011a2cf1ec6",
-    "process_time": 615,
-    "server_id": "app182",
+    "query_id": "20250427132447-69e028ad-4ed5-4106-8577-d97c98d274b8",
+    "process_time": 471,
+    "server_id": "app176",
     "build_version": "main-2025.04.15",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-04-27T12:37:08.009643"
+    "time": "2025-04-27T13:24:47.825451"
 }
