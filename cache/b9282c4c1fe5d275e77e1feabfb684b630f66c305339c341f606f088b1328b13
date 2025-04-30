@@ -171,6 +171,26 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td></td>
                 <td></td>
               </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-30-23-02-00">2025-04-30-23-02-00</a></td>
+                <td>2025-04-30 23:02</td>
+                <td>421.0 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-30-20-02-00">2025-04-30-20-02-00</a></td>
+                <td>2025-04-30 20:02</td>
+                <td>421.4 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-30-19-02-00">2025-04-30-19-02-00</a></td>
+                <td>2025-04-30 19:02</td>
+                <td>421.4 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-30-18-02-00">2025-04-30-18-02-00</a></td>
+                <td>2025-04-30 18:02</td>
+                <td>421.4 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-30-16-27-00">2025-04-30-16-27-00</a></td>
+                <td>2025-04-30 16:33</td>
+                <td>421.2 KiB</td>
+              </tr><tr>
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-30-15-04-21">2025-04-30-15-04-21</a></td>
                 <td>2025-04-30 15:04</td>
                 <td>421.2 KiB</td>
@@ -366,34 +386,6 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-28-00-02-00">2025-04-28-00-02-00</a></td>
                 <td>2025-04-28 00:02</td>
                 <td>395.5 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-23-02-00">2025-04-27-23-02-00</a></td>
-                <td>2025-04-27 23:02</td>
-                <td>395.5 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-22-02-00">2025-04-27-22-02-00</a></td>
-                <td>2025-04-27 22:02</td>
-                <td>395.5 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-20-02-00">2025-04-27-20-02-00</a></td>
-                <td>2025-04-27 20:02</td>
-                <td>395.5 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-19-02-00">2025-04-27-19-02-00</a></td>
-                <td>2025-04-27 19:02</td>
-                <td>395.5 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-18-02-00">2025-04-27-18-02-00</a></td>
-                <td>2025-04-27 18:02</td>
-                <td>395.3 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-17-02-00">2025-04-27-17-02-00</a></td>
-                <td>2025-04-27 17:02</td>
-                <td>395.3 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-04-27-16-02-00">2025-04-27-16-02-00</a></td>
-                <td>2025-04-27 16:02</td>
-                <td>395.0 KiB</td>
               </tr>
             </tbody>
           </table>
