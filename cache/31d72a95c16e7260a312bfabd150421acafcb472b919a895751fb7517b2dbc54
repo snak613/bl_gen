@@ -5527,11 +5527,11 @@
         "latest_time": "2025-05-01T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250501102249-83725939-3647-43b4-bbff-642906139144",
-    "process_time": 275,
-    "server_id": "app190",
+    "query_id": "20250501104501-99dd2928-7cd8-4428-9929-4382fb996ea6",
+    "process_time": 320,
+    "server_id": "app189",
     "build_version": "main-2025.04.30",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-01T10:22:49.404501"
+    "time": "2025-05-01T10:45:01.387989"
 }
