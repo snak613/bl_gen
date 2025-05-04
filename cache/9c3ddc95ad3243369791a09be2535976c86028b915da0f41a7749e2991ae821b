@@ -7943,11 +7943,11 @@
         "latest_time": "2025-05-04T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250504071830-d45bbf2a-f8d7-4fb8-bb0e-2aa88ae731b0",
-    "process_time": 450,
-    "server_id": "app161",
+    "query_id": "20250504073714-169629ba-5f58-4c56-b951-e7836bff11f6",
+    "process_time": 426,
+    "server_id": "app198",
     "build_version": "main-2025.04.30",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-04T07:18:31.065182"
+    "time": "2025-05-04T07:37:14.466459"
 }
