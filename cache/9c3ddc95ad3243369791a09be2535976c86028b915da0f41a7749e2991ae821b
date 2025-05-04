@@ -7934,11 +7934,11 @@
         "latest_time": "2025-05-04T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250504151946-b8a8be8c-f0f4-4566-9432-4f04cdef8f18",
-    "process_time": 476,
-    "server_id": "app196",
+    "query_id": "20250504154014-7971408c-245c-4d10-8f94-db8c2a2e711a",
+    "process_time": 464,
+    "server_id": "app164",
     "build_version": "main-2025.04.30",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-04T15:19:47.219545"
+    "time": "2025-05-04T15:40:15.149563"
 }
