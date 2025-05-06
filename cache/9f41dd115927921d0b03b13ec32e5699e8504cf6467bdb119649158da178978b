@@ -9,15 +9,15 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": false,
+    "cached": true,
     "data": {
         "prefixes": [
             {
-                "prefix": "167.220.226.0/23",
+                "prefix": "2404:f801:802c::/48",
                 "timelines": [
                     {
-                        "starttime": "2025-04-21T16:00:00",
-                        "endtime": "2025-05-05T16:00:00"
+                        "starttime": "2025-04-22T00:00:00",
+                        "endtime": "2025-05-06T00:00:00"
                     }
                 ]
             },
@@ -25,17 +25,17 @@
                 "prefix": "2404:f801:8020::/48",
                 "timelines": [
                     {
-                        "starttime": "2025-04-21T16:00:00",
-                        "endtime": "2025-05-05T16:00:00"
+                        "starttime": "2025-04-22T00:00:00",
+                        "endtime": "2025-05-06T00:00:00"
                     }
                 ]
             },
             {
-                "prefix": "2404:f801:802c::/48",
+                "prefix": "167.220.226.0/23",
                 "timelines": [
                     {
-                        "starttime": "2025-04-21T16:00:00",
-                        "endtime": "2025-05-05T16:00:00"
+                        "starttime": "2025-04-22T00:00:00",
+                        "endtime": "2025-05-06T00:00:00"
                     }
                 ]
             },
@@ -43,23 +43,23 @@
                 "prefix": "167.220.227.0/24",
                 "timelines": [
                     {
-                        "starttime": "2025-04-21T16:00:00",
-                        "endtime": "2025-05-05T16:00:00"
+                        "starttime": "2025-04-22T00:00:00",
+                        "endtime": "2025-05-06T00:00:00"
                     }
                 ]
             }
         ],
-        "query_starttime": "2025-04-21T16:00:00",
-        "query_endtime": "2025-05-05T16:00:00",
+        "query_starttime": "2025-04-22T00:00:00",
+        "query_endtime": "2025-05-06T00:00:00",
         "resource": "45139",
-        "latest_time": "2025-05-05T16:00:00",
+        "latest_time": "2025-05-06T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250506014424-6103e279-a3bb-432d-9787-a62620ff7ff9",
-    "process_time": 22,
-    "server_id": "app175",
+    "query_id": "20250506030914-f12506ca-8dee-4348-a675-7a84e23730a4",
+    "process_time": 3,
+    "server_id": "app187",
     "build_version": "main-2025.04.30",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-06T01:44:24.626880"
+    "time": "2025-05-06T03:09:14.391420"
 }
