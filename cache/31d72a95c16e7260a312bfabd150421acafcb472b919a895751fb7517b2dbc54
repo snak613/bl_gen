@@ -5545,11 +5545,11 @@
         "latest_time": "2025-05-06T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250506142058-8d1cdccc-10f5-4aff-aacd-17a32e61e985",
-    "process_time": 273,
-    "server_id": "app181",
-    "build_version": "main-2025.04.30",
+    "query_id": "20250506144550-ff55eb69-c9ac-471c-9698-ba242fc8960f",
+    "process_time": 332,
+    "server_id": "app161",
+    "build_version": "dev-2025.05.06",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-06T14:20:59.084962"
+    "time": "2025-05-06T14:45:51.157726"
 }
