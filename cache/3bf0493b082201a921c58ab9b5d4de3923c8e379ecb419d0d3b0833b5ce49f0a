@@ -3466,7 +3466,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 439 peers
+                                    are 441 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -4786,6 +4786,24 @@ Source:         AAAA
                 
                 <td>
                     
+                        <a href="/AS16735"
+                        class="charcoal-link "
+                        >AS16735</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        ALGAR TELECOM S/A
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
                         <a href="/AS17378"
                         class="charcoal-link "
                         >AS17378</a>
@@ -5263,24 +5281,6 @@ Source:         AAAA
                 <td>
                     
                         Ntirety, Inc.
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS200612"
-                        class="charcoal-link "
-                        >AS200612</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        Gulf Bridge International Inc.
                     
                 </td>
                 
@@ -5963,9 +5963,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS11710</h4>
-                        <p class="opacity-100">ABBA TECHNOLOGIES</p>
-                        <a href="/AS11710" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS11118</h4>
+                        <p class="opacity-100">ComTeck</p>
+                        <a href="/AS11118" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5974,9 +5974,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS1218</h4>
-                        <p class="opacity-100">Oracle Corporation</p>
-                        <a href="/AS1218" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS14619</h4>
+                        <p class="opacity-100">THERA NETWORKS</p>
+                        <a href="/AS14619" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5985,9 +5985,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS19270</h4>
-                        <p class="opacity-100">JPMorgan Chase &amp; Co.</p>
-                        <a href="/AS19270" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS18933</h4>
+                        <p class="opacity-100">UNITED STATES CELLULAR TELEPHONE COMPANY (GREATER KNOXVILLE), L.P.</p>
+                        <a href="/AS18933" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5996,9 +5996,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS19691</h4>
-                        <p class="opacity-100">888 US Inc.</p>
-                        <a href="/AS19691" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS215724</h4>
+                        <p class="opacity-100">Edgevana, Inc.</p>
+                        <a href="/AS215724" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6007,9 +6007,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS26590</h4>
-                        <p class="opacity-100">Ascent Solutions</p>
-                        <a href="/AS26590" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS22486</h4>
+                        <p class="opacity-100">Ninja-IX Corporation</p>
+                        <a href="/AS22486" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6018,9 +6018,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS33338</h4>
-                        <p class="opacity-100">TUALITY HEALTHCARE</p>
-                        <a href="/AS33338" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS393437</h4>
+                        <p class="opacity-100">KLAYER LLC</p>
+                        <a href="/AS393437" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6289,7 +6289,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMjUuMTkyLjIzMA%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMTYwLjE2MS4yNDI%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
