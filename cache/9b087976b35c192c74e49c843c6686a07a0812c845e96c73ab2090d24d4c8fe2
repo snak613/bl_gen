@@ -3378,7 +3378,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 245 peers
+                                    are 248 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -3492,6 +3492,24 @@ Source:         AAAA
                 
                 <td>
                     
+                        <a href="/AS1239"
+                        class="charcoal-link "
+                        >AS1239</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Sprint
+                    
+                </td>
+                
+            </tr>
+            
+            <tr >
+                
+                <td>
+                    
                         <a href="/AS12552"
                         class="charcoal-link "
                         >AS12552</a>
@@ -3560,7 +3578,7 @@ Source:         AAAA
                 
             </tr>
             
-            <tr >
+            <tr class="collapse collapse-peers-table">
                 
                 <td>
                     
@@ -4077,6 +4095,24 @@ Source:         AAAA
                 <td>
                     
                         ALGAR TELECOM S/A
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
+                        <a href="/AS174"
+                        class="charcoal-link "
+                        >AS174</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Cogent Communications
                     
                 </td>
                 
@@ -4788,6 +4824,24 @@ Source:         AAAA
                 
                 <td>
                     
+                        <a href="/AS271253"
+                        class="charcoal-link "
+                        >AS271253</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        LINK BRASIL TELECOMUNICACOES LTDA
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
                         <a href="/AS2856"
                         class="charcoal-link "
                         >AS2856</a>
@@ -5144,60 +5198,6 @@ Source:         AAAA
                 
             </tr>
             
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS3216"
-                        class="charcoal-link "
-                        >AS3216</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        PJSC &quot;Vimpelcom&quot;
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS3257"
-                        class="charcoal-link "
-                        >AS3257</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        GTT Communications Inc.
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS32653"
-                        class="charcoal-link "
-                        >AS32653</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        eNetworks cc
-                    
-                </td>
-                
-            </tr>
-            
         </tbody>
     </table>
 
@@ -5239,7 +5239,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 13 upstreams
+                                    are 14 upstreams
                                     for this ASN.
                                 </small>
                             </p>
@@ -5272,6 +5272,24 @@ Source:         AAAA
                 <td>
                     
                         Arelion Sweden AB
+                    
+                </td>
+                
+            </tr>
+            
+            <tr >
+                
+                <td>
+                    
+                        <a href="/AS174"
+                        class="charcoal-link "
+                        >AS174</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Cogent Communications
                     
                 </td>
                 
@@ -5421,7 +5439,7 @@ Source:         AAAA
                 
             </tr>
             
-            <tr >
+            <tr class="collapse collapse-upstreams-table">
                 
                 <td>
                     
@@ -5605,9 +5623,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS198222</h4>
-                        <p class="opacity-100">West Herts College</p>
-                        <a href="/AS198222" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS200961</h4>
+                        <p class="opacity-100">FIL INVESTMENT MANAGEMENT LIMITED</p>
+                        <a href="/AS200961" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5616,9 +5634,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS200455</h4>
-                        <p class="opacity-100">HOTARU NETWORK LTD.</p>
-                        <a href="/AS200455" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS201106</h4>
+                        <p class="opacity-100">Spartan Host Ltd</p>
+                        <a href="/AS201106" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5627,9 +5645,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS202685</h4>
-                        <p class="opacity-100">Aggros Operations Ltd.</p>
-                        <a href="/AS202685" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS201304</h4>
+                        <p class="opacity-100">CentralNic Ltd</p>
+                        <a href="/AS201304" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5638,9 +5656,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS204777</h4>
-                        <p class="opacity-100">telent Technology Services Ltd</p>
-                        <a href="/AS204777" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS203443</h4>
+                        <p class="opacity-100">INDERT CONNECTION LP</p>
+                        <a href="/AS203443" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5649,9 +5667,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS209447</h4>
-                        <p class="opacity-100">RETN Limited</p>
-                        <a href="/AS209447" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS211955</h4>
+                        <p class="opacity-100">NOTBAD HOSTING LTD</p>
+                        <a href="/AS211955" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5660,9 +5678,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS214705</h4>
-                        <p class="opacity-100">JAMF LTD</p>
-                        <a href="/AS214705" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS3154</h4>
+                        <p class="opacity-100">Jisc Services Limited</p>
+                        <a href="/AS3154" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5931,7 +5949,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjM0LjQ2LjEwMw%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMjQ2Ljc5LjE2OA%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
