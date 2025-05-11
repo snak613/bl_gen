@@ -171,6 +171,18 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td></td>
                 <td></td>
               </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-11-01-43-06">2025-05-11-01-43-06</a></td>
+                <td>2025-05-11 01:43</td>
+                <td>397.7 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-11-00-43-06">2025-05-11-00-43-06</a></td>
+                <td>2025-05-11 00:43</td>
+                <td>397.7 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-10-23-43-06">2025-05-10-23-43-06</a></td>
+                <td>2025-05-10 23:43</td>
+                <td>397.9 KiB</td>
+              </tr><tr>
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-10-22-43-06">2025-05-10-22-43-06</a></td>
                 <td>2025-05-10 22:43</td>
                 <td>397.9 KiB</td>
@@ -446,18 +458,6 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-08-02-42-55">2025-05-08-02-42-55</a></td>
                 <td>2025-05-08 02:42</td>
                 <td>404.6 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-08-01-42-55">2025-05-08-01-42-55</a></td>
-                <td>2025-05-08 01:42</td>
-                <td>404.4 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-08-00-42-55">2025-05-08-00-42-55</a></td>
-                <td>2025-05-08 00:42</td>
-                <td>404.4 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-05-07-23-42-55">2025-05-07-23-42-55</a></td>
-                <td>2025-05-07 23:42</td>
-                <td>404.4 KiB</td>
               </tr>
             </tbody>
           </table>
