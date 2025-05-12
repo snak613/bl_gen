@@ -7925,11 +7925,11 @@
         "latest_time": "2025-05-12T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250512144627-6c959241-9e7a-4a8b-9e9c-61f81cb27d8f",
-    "process_time": 515,
-    "server_id": "app193",
+    "query_id": "20250512152517-81de0d53-b23c-479f-b4c4-a879925c265d",
+    "process_time": 454,
+    "server_id": "app192",
     "build_version": "main-2025.05.07",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-12T14:46:27.931301"
+    "time": "2025-05-12T15:25:18.437658"
 }
