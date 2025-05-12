@@ -9,15 +9,24 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": false,
+    "cached": true,
     "data": {
         "prefixes": [
+            {
+                "prefix": "2404:f801:8020::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-04-28T16:00:00",
+                        "endtime": "2025-05-12T16:00:00"
+                    }
+                ]
+            },
             {
                 "prefix": "167.220.226.0/23",
                 "timelines": [
                     {
-                        "starttime": "2025-04-28T08:00:00",
-                        "endtime": "2025-05-12T08:00:00"
+                        "starttime": "2025-04-28T16:00:00",
+                        "endtime": "2025-05-12T16:00:00"
                     }
                 ]
             },
@@ -25,17 +34,8 @@
                 "prefix": "167.220.227.0/24",
                 "timelines": [
                     {
-                        "starttime": "2025-04-28T08:00:00",
-                        "endtime": "2025-05-12T08:00:00"
-                    }
-                ]
-            },
-            {
-                "prefix": "2404:f801:8020::/48",
-                "timelines": [
-                    {
-                        "starttime": "2025-04-28T08:00:00",
-                        "endtime": "2025-05-12T08:00:00"
+                        "starttime": "2025-04-28T16:00:00",
+                        "endtime": "2025-05-12T16:00:00"
                     }
                 ]
             },
@@ -43,23 +43,23 @@
                 "prefix": "2404:f801:802c::/48",
                 "timelines": [
                     {
-                        "starttime": "2025-04-28T08:00:00",
-                        "endtime": "2025-05-12T08:00:00"
+                        "starttime": "2025-04-28T16:00:00",
+                        "endtime": "2025-05-12T16:00:00"
                     }
                 ]
             }
         ],
-        "query_starttime": "2025-04-28T08:00:00",
-        "query_endtime": "2025-05-12T08:00:00",
+        "query_starttime": "2025-04-28T16:00:00",
+        "query_endtime": "2025-05-12T16:00:00",
         "resource": "45139",
-        "latest_time": "2025-05-12T08:00:00",
+        "latest_time": "2025-05-12T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250512191741-c01bd878-e6e7-4500-9f5c-8faae9fff855",
-    "process_time": 16,
-    "server_id": "app165",
+    "query_id": "20250512193758-74bc91d8-fa83-4341-a41f-e68dab6451b4",
+    "process_time": 2,
+    "server_id": "app167",
     "build_version": "main-2025.05.07",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-12T19:17:41.073709"
+    "time": "2025-05-12T19:37:58.714341"
 }
