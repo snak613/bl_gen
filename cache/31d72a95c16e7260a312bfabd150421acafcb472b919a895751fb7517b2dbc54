@@ -5563,11 +5563,11 @@
         "latest_time": "2025-05-13T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250513063045-12aceb3c-ffe6-4aaa-930f-50305b379f21",
-    "process_time": 409,
-    "server_id": "app182",
+    "query_id": "20250513072140-cce3b216-d271-4956-9a15-5aab3fc3131a",
+    "process_time": 347,
+    "server_id": "app189",
     "build_version": "main-2025.05.07",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-13T06:30:45.409614"
+    "time": "2025-05-13T07:21:40.466606"
 }
