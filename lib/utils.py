@@ -70,6 +70,7 @@ def sort_ips(ip_list: List[str]) -> List[str]:
         )
 
     ip_list = map(lambda s: s.lstrip("0"), ip_list)
+    ip_list = filter(is_valid_ip, ip_list)
     return sorted(ip_list, key=ip_key)
 
 
@@ -92,13 +93,13 @@ def normalize_ip(ip_string: str) -> str:
         if ":" in ip:
             return f"{ip}/{cidr}"
 
-        octets = [str(int(octet)) for octet in ip.split(".")]
+        octets = [str(int(octet)) for octet in ip.split(".") if octet]
         return f"{'.'.join(octets)}/{cidr}"
     else:
         if ":" in ip_string:
             return ip_string
 
-        octets = [str(int(octet)) for octet in ip_string.split(".")]
+        octets = [str(int(octet)) for octet in ip_string.split(".") if octet]
         return ".".join(octets)
 
 
