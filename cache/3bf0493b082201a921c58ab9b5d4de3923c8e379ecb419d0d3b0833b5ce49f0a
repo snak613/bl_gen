@@ -440,12 +440,10 @@
         </div>
         
     
-
-    
         <ul class="tags mb-0">
             
                 <a href="/tags/anycast" role="listitem" class="tag" data-toggle="tooltip-light" data-placement="top" title="At least one IP assigned to this ASN is tagged with anycast (Shared by multiple devices in multiple locations)">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" /></svg> <span class="label">anycast</span>
+                    <img src="https://website-cdn.ipinfo.io/tags/anycast.svg" alt="anycast Icon"/> <span class="label">anycast</span>
                 </a>
             
         </ul>
@@ -567,7 +565,7 @@
                                         data-trigger="hover">Hosted domains</span>
                                     </td>
                                     <td>
-                                        556
+                                        555
                                     </td>
                                 </tr>
 
@@ -581,7 +579,7 @@
                                         data-trigger="hover">Number of IPv4</span>
                                     </td>
                                     <td>
-                                        54,784
+                                        55,552
                                     </td>
                                 </tr>
 
@@ -1093,6 +1091,30 @@
                 
                 <td>
                     
+                        <a href="/AS40934/148.230.44.0/24"
+                        class="charcoal-link "
+                        >148.230.44.0/24</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        <span class="flag flag-us">Fortinet Inc.</span>
+                    
+                </td>
+                
+                <td>
+                    
+                        256
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-ipv4-table">
+                
+                <td>
+                    
                         <a href="/AS40934/148.230.45.0/24"
                         class="charcoal-link "
                         >148.230.45.0/24</a>
@@ -1336,6 +1358,30 @@
                         <a href="/AS40934/148.230.58.0/24"
                         class="charcoal-link "
                         >148.230.58.0/24</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        <span class="flag flag-us">Fortinet Inc.</span>
+                    
+                </td>
+                
+                <td>
+                    
+                        256
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-ipv4-table">
+                
+                <td>
+                    
+                        <a href="/AS40934/148.230.59.0/24"
+                        class="charcoal-link "
+                        >148.230.59.0/24</a>
                     
                 </td>
                 
@@ -3057,54 +3103,6 @@
                 
             </tr>
             
-            <tr class="collapse collapse-ipv4-table">
-                
-                <td>
-                    
-                        <a href="/AS40934/193.149.134.0/23"
-                        class="charcoal-link "
-                        >193.149.134.0/23</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        <span class="flag flag-us">Fortinet Inc.</span>
-                    
-                </td>
-                
-                <td>
-                    
-                        512
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-ipv4-table">
-                
-                <td>
-                    
-                        <a href="/AS40934/193.149.139.0/24"
-                        class="charcoal-link "
-                        >193.149.139.0/24</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        <span class="flag flag-us">Fortinet Inc.</span>
-                    
-                </td>
-                
-                <td>
-                    
-                        256
-                    
-                </td>
-                
-            </tr>
-            
         </tbody>
     </table>
 
@@ -3335,7 +3333,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 556 domain names
+                                    are 555 domain names
                                     hosted across
                                     61 IP addresses
                                     on this ASN.
@@ -3362,7 +3360,7 @@ Source:         AAAA
                                         <tr>
                                             <td><a href="/208.91.112.55" class="charcoal-link">208.91.112.55</a></td>
                                             <td>██████████</td>
-                                            <td>370</td>
+                                            <td>369</td>
                                         </tr>
                                         
                                         <tr>
@@ -3390,19 +3388,19 @@ Source:         AAAA
                                         </tr>
                                         
                                         <tr>
-                                            <td><a href="/209.40.96.22" class="charcoal-link">209.40.96.22</a></td>
+                                            <td><a href="/154.52.1.42" class="charcoal-link">154.52.1.42</a></td>
                                             <td>██████████</td>
+                                            <td>3</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><a href="/209.40.96.22" class="charcoal-link">209.40.96.22</a></td>
+                                            <td>████████</td>
                                             <td>3</td>
                                         </tr>
                                         
                                         <tr>
                                             <td><a href="/209.40.98.40" class="charcoal-link">209.40.98.40</a></td>
-                                            <td>██████████</td>
-                                            <td>3</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td><a href="/154.52.1.42" class="charcoal-link">154.52.1.42</a></td>
                                             <td>██████████</td>
                                             <td>3</td>
                                         </tr>
@@ -3414,8 +3412,8 @@ Source:         AAAA
                                         </tr>
                                         
                                         <tr>
-                                            <td><a href="/209.52.38.238" class="charcoal-link">209.52.38.238</a></td>
-                                            <td>██████████</td>
+                                            <td><a href="/209.40.97.113" class="charcoal-link">209.40.97.113</a></td>
+                                            <td>██████</td>
                                             <td>2</td>
                                         </tr>
                                         
@@ -3466,7 +3464,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 445 peers
+                                    are 443 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -3679,24 +3677,6 @@ Source:         AAAA
                 <td>
                     
                         PhoenixNAP LLC
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS1239"
-                        class="charcoal-link "
-                        >AS1239</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        Sprint
                     
                 </td>
                 
@@ -4786,6 +4766,24 @@ Source:         AAAA
                 
                 <td>
                     
+                        <a href="/AS16735"
+                        class="charcoal-link "
+                        >AS16735</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        ALGAR TELECOM S/A
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
                         <a href="/AS17378"
                         class="charcoal-link "
                         >AS17378</a>
@@ -5327,7 +5325,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 28 upstreams
+                                    are 29 upstreams
                                     for this ASN.
                                 </small>
                             </p>
@@ -5346,6 +5344,24 @@ Source:         AAAA
         </thead>
 
         <tbody>
+            
+            <tr >
+                
+                <td>
+                    
+                        <a href="/AS15695"
+                        class="charcoal-link "
+                        >AS15695</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Expereo International BV
+                    
+                </td>
+                
+            </tr>
             
             <tr >
                 
@@ -5509,7 +5525,7 @@ Source:         AAAA
                 
             </tr>
             
-            <tr >
+            <tr class="collapse collapse-upstreams-table">
                 
                 <td>
                     
@@ -5981,9 +5997,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS11806</h4>
-                        <p class="opacity-100">Leepfrog Technologies, Inc.</p>
-                        <a href="/AS11806" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS12249</h4>
+                        <p class="opacity-100">City of Yuba City</p>
+                        <a href="/AS12249" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -5992,9 +6008,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS16391</h4>
-                        <p class="opacity-100">Celito Communications Inc.</p>
-                        <a href="/AS16391" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS1312</h4>
+                        <p class="opacity-100">Virginia Polytechnic Institute and State Univ.</p>
+                        <a href="/AS1312" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6003,9 +6019,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS22067</h4>
-                        <p class="opacity-100">AMERIPRISE FINANCIAL SERVICES, LLC</p>
-                        <a href="/AS22067" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS13363</h4>
+                        <p class="opacity-100">ASG Technologies Group, Inc.</p>
+                        <a href="/AS13363" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6014,9 +6030,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS29704</h4>
-                        <p class="opacity-100">Power &amp; Telephone Supply Company</p>
-                        <a href="/AS29704" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS136541</h4>
+                        <p class="opacity-100">The Ogilvy Group, LLC.</p>
+                        <a href="/AS136541" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6025,9 +6041,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS396573</h4>
-                        <p class="opacity-100">VeriSign Global Registry Services</p>
-                        <a href="/AS396573" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS172</h4>
+                        <p class="opacity-100">Headquarters, USAISC</p>
+                        <a href="/AS172" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6036,9 +6052,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS396732</h4>
-                        <p class="opacity-100">VeriSign Global Registry Services</p>
-                        <a href="/AS396732" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS1792</h4>
+                        <p class="opacity-100">Sprint</p>
+                        <a href="/AS1792" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6274,7 +6290,7 @@ Source:         AAAA
                     "COUNTRY: United States",
                     "ALLOCATED: 2008-05-29T00:00:00+00:00",
                     "REGISTRY: arin",
-                    "IP ADDRESSES: 54784",
+                    "IP ADDRESSES: 55552",
                     "TYPE: hosting"
                 ]
             },
@@ -6307,7 +6323,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuNTEuMTI5Ljg%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMTY5LjIyOC4zMg%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
