@@ -9,7 +9,7 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": true,
+    "cached": false,
     "data": {
         "prefixes": [
             {
@@ -352,11 +352,11 @@
         "latest_time": "2025-05-28T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250528133435-4176044b-3c62-4a2c-a18e-f45ca06929e0",
-    "process_time": 1,
-    "server_id": "app173",
+    "query_id": "20250528142326-d1a8d871-4b29-4e28-b702-7f9df17c8f83",
+    "process_time": 42,
+    "server_id": "app198",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-28T13:34:35.500267"
+    "time": "2025-05-28T14:23:26.099456"
 }
