@@ -92,6 +92,121 @@
     
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ipinfo.io/AS44444" />
+    <style>
+        .dropdown-menu-with-left-nav {
+            @media (min-width: 768px) {
+                left: -200px;
+                top: 47px;
+                padding: 0 !important;
+                border-radius: 3px;
+                overflow: hidden;
+            }
+        }
+
+        .dropdown-menu-with-left-nav__container {
+            @media (min-width: 768px) {
+                display: flex;
+                left: 0;
+            }
+        }
+
+        .dropdown-menu-with-left-nav__container > .dropdown-menu-with-left-nav__container-left-nav {
+            @media (min-width: 768px) {
+                min-width: 295px;
+                margin-right: 32px;
+                background-color: #F8F9F9;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+
+        .dropdown-menu-with-left-nav__container-left-nav > .dropdown-left-nav-item {
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .dropdown-left-nav-item > a.dropdown-left-nav-item__link {
+            display: none !important;
+
+            @media (min-width: 768px) {
+                display: inline-block;
+                color: #0095E5 !important;
+                font-weight: 600;
+            }
+        }
+
+        .dropdown-menu-with-left-nav__container-main-content {
+            @media (min-width: 768px) {
+                display: flex;
+                gap: 24px;
+                padding: 24px;
+            }
+        }
+
+        .dropdown-menu-with-left-nav__container-main-content-col {
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                width: 290px;
+                gap: 20px;
+            }
+        }
+
+        .dropdown-menu-data {
+            @media (min-width: 768px) {
+                left: -350px;
+            }
+        }
+
+        .dropdown-menu-data__title {
+            @media (min-width: 768px) {
+                padding-bottom: 10px;
+            }
+        }
+
+        .dropdown-menu-data__links {
+            display: flex;
+            gap: 14px;
+            margin-left: 35px;
+            margin-bottom: 10px;
+
+            @media (min-width: 768px) {
+                gap: 20px;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        .dropdown-menu-why-ipinfo {
+            @media (min-width: 768px) {
+                left: -450px;
+            }
+        }
+
+        .dropdown-menu-resources {
+            @media (min-width: 768px) {
+                left: -600px;
+            }
+        }
+
+        .dropdown-menu-resources__tools-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 45px;
+
+            @media (min-width: 768px) {
+                list-style: disc !important;
+                list-style-position: inside !important;
+                margin-left: 0;
+                font-weight: 400;
+            }
+        }
+    </style>
 </head>
 
 <body data-target="#menu-items" data-spy="scroll" data-offset="120" data-page-type="asn">
@@ -118,239 +233,187 @@
                     <ul class="navbar-nav navbar-nav-main order-2 order-lg-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
-                                <ul>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/ip-geolocation-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/geolocation-small.svg" alt="Geolocation" /></a></div>
-                                        <div><h6><a href="/products/ip-geolocation-api">IP to Geolocation API</a></h6>
-                                        <p><a href="/products/ip-geolocation-api">Customize user experiences</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/ranges-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/ranges-small.svg" alt="IP ranges" /></a></div>
-                                        <div><h6><a href="/products/ranges-api">IP Ranges API</a></h6>
-                                        <p><a href="/products/ranges-api">Target specific IP ranges</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/proxy-vpn-detection-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/privacy-small.svg" alt="Privacy detection" /></a></div>
-                                        <div><h6><a href="/products/proxy-vpn-detection-api">Privacy Detection API</a></h6>
-                                        <p><a href="/products/proxy-vpn-detection-api">Unmask users' identities</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/ip-company-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/company-small.svg" alt="Company" /></a></div>
-                                        <div><h6><a href="/products/ip-company-api">IP to Company API</a></h6>
-                                        <p><a href="/products/ip-company-api">Leverage anonymous leads</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/asn-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/asn-small.svg" alt="ASN" /></a></div>
-                                        <div><h6><a href="/products/asn-api">ASN API</a></h6>
-                                        <p><a href="/products/asn-api">Improve data enrichment</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/reverse-ip-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/domains-small.svg" alt="Domains" /></a></div>
-                                        <div><h6><a href="/products/reverse-ip-api">Hosted Domains API</a></h6>
-                                        <p><a href="/products/reverse-ip-api">Enhance lead generation</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/ip-carrier-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/carrier-small.svg" alt="Geolocation" /></a></div>
-                                        <div><h6><a href="/products/ip-carrier-api">IP to Mobile Carrier API</a></h6>
-                                        <p><a href="/products/ip-carrier-api">Identify mobile users</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="pr-2"><a href="/products/ip-abuse-contact-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/abuse-small.svg" alt="Abuse contact" /></a></div>
-                                        <div><h6><a href="/products/ip-abuse-contact-api">Abuse Contact API</a></h6>
-                                        <p><a href="/products/ip-abuse-contact-api">Automate abusive IP reporting</a></p></div>
-                                    </li>
-                                    <li class="d-flex align-items-center mb-sm-0">
-                                        <div class="pr-2"><a href="/products/whois-api"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/whois-small.svg" alt="Database download" /></a></div>
-                                        <div><h6><a href="/products/whois-api">IP Whois API</a></h6>
-                                        <p><a href="/products/whois-api">Get more IP insights</a></p></div>
-                                    </li>
+                            <div class="dropdown-menu dropdown-menu-with-left-nav" aria-labelledby="navbarDropdownProducts">
+                                <ul class="dropdown-menu-with-left-nav__container">
+                                    <div class="dropdown-menu-with-left-nav__container-left-nav">
+                                        <li class="dropdown-left-nav-item">
+                                            <h5><a href="/products">Our Products</a></h5>
+                                            <p><a href="/products">Flexible, scalable IP data packages for every size project</a></p>
+                                            <a class="dropdown-left-nav-item__link" href="/products">Compare All Our Products</a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-menu-with-left-nav__container-main-content">
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
+                                            <li>
+                                                <h5><a href="/lite">IPinfo Lite</a></h5>
+                                                <p><a href="/lite">Country-level geo and ASN IP data: accurate, unlimited and free</a></p>
+                                            </li>
+                                            <li>
+                                                <h5><a href="/products/standard">IPinfo Standard</a></h5>
+                                                <p><a href="/products/standard">Detailed privacy data that includes service details</a></p>
+                                            </li>
+                                            <li>
+                                                <h5><a href="/enterprise">IPinfo Enterprise</a></h5>
+                                                <p><a href="/enterprise">Tailored IP data solutions with custom datasets, integrations, and dedicated support</a></p>
+                                            </li>
+                                        </div>
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
+                                            <li>
+                                                <h5><a href="/products/core">IPinfo Core</a></h5>
+                                                <p><a href="/products/core">City-level geolocation with essential privacy detection flags</a></p>
+                                            </li>
+                                            <li>
+                                                <h5><a href="/products/business">IPinfo Business</a></h5>
+                                                <p><a href="/products/business">Comprehensive IP intelligence with Company, Abuse, and Hosted Domains data</a></p>
+                                            </li>
+                                        </div>
+                                    </div>
                                 </ul>
-                                <div class="d-flex align-items-center mb-sm-0 db-menu">
-                                    <div class="pr-2"><a href="/products/ip-database-download"><img class="p-icon" src="https://cdn.ipinfo.io/static/images/product-icons/database-download-small.svg" alt="Database download" /></a></div>
-                                    <div><h6><a href="/products/ip-database-download">IP Database Download</a></h6>
-                                    <p><a href="/products/ip-database-download">Access data the way you choose</a></p></div>
-                                </div>
-                                
                             </div>
                         </li>
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-                            <div class="dropdown-menu solutions-dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-                                <ul>
-                                    <li>
-                                        <ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownData" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data</a>
+                            <div class="dropdown-menu dropdown-menu-with-left-nav dropdown-menu-data" aria-labelledby="navbarDropdownData">
+                                <ul class="dropdown-menu-with-left-nav__container">
+                                    <div class="dropdown-menu-with-left-nav__container-left-nav">
+                                        <li class="dropdown-left-nav-item">
+                                            <h5><a href="/our-data">Our Data</a></h5>
+                                            <p><a href="/our-data">Precise, comprehensive IP data for geolocation, privacy detection, and more</a></p>
+                                            <a class="dropdown-left-nav-item__link" href="/our-data">View All Our Data</a>
+                                        </li>
+                                        <li class="dropdown-left-nav-item">
+                                            <h5><a href="/integrations">Integrations</a></h5>
+                                            <p><a href="/integrations">Powerful data-driven insights delivered quickly</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-menu-with-left-nav__container-main-content">
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
                                             <li>
-                                                <h5><a href="/products/enterprise">Enterprise</a></h5>
-                                                <p><a href="/products/enterprise">Customized features for fast-moving organizations</a></p>
+                                                <h5 class="dropdown-menu-data__title">IP to Geolocation</h5>
+                                                <p>Map IPs to locations</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/ip-geolocation-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/ip-geolocation-database">Database Download</a>
+                                                </div>
                                             </li>
                                             <li>
-                                                <h5><a href="/integrations">Integrations</a></h5>
-                                                <p><a href="/integrations">Enhance your IP address insights</a></p>
+                                                <h5 class="dropdown-menu-data__title">Privacy Detection</h5>
+                                                <p>VPNs, proxies and more</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/proxy-vpn-detection-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/anonymous-ip-database">Database Download</a>
+                                                </div>
                                             </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h5 class="mb-3"><a href="/use-cases">Use Cases</a></h5>
-                                        <ul class="solutions-dropdown-menu__use-cases-lists-list">
-                                            <li class="solutions-dropdown-menu__use-cases-list-container solutions-dropdown-menu__use-cases-list-container--popular w-auto">
-                                                <h5 class="solutions-dropdown-menu__use-case-type font-size-12 font-weight-bold mb-3 text-uppercase">The most popular use cases</h5>
-                                                <ul class="solutions-dropdown-menu__use-cases-list solutions-dropdown-menu__use-cases-list--popular">
-                                                    <li class="w-auto m-0">
-                                                        <a title="Advertising Technology" href="/use-cases/ip-data-for-advertising">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                Advertising Technology
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub">
-                                                                Keep up with advertising innovation and reach the best buyers
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="w-auto m-0">
-                                                        <a title="Cyber Security" href="/use-cases/cybersecurity">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                Cyber Security
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub">
-                                                                Prevent and eliminate security risks with accurate IP data
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="w-auto m-0">
-                                                        <a title="Data Enrichment" href="/use-cases/ip-data-for-data-enrichment">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                Data Enrichment
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub">
-                                                                Gather more context and make const-effective decisions
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="w-auto m-0">
-                                                        <a title="E&ndash;Commerce" href="/use-cases/ip-data-for-ecommerce">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                E&ndash;Commerce
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub">
-                                                                Deliver the hassle-free experiences customers expect
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="w-auto m-0">
-                                                        <a title="Telecommunications" href="/use-cases/ip-data-for-telecom-companies">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                Telecommunications
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub">
-                                                                Provide more reliable network experiences for customers
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="w-auto m-0">
-                                                        <a title="Digital Media and Entertainment" href="/use-cases/ip-data-for-digital-media-entertainment">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                Digital Media and Entertainment
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub font-size-14">
-                                                                Protect and promote digital content
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                    <li class="w-auto m-0">
-                                                        <a title="Fraud Prevention" href="/use-cases/ip-data-for-fraud-prevention">
-                                                            <h6 class="solutions-dropdown-menu__use-case">
-                                                                Fraud Prevention
-                                                            </h6>
-                                                            <p class="solutions-dropdown-menu__use-case-sub">
-                                                                Improve fraud risk modeling
-                                                            </p>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">ASN</h5>
+                                                <p>Identify network providers</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/asn-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/asn-database">Database Download</a>
+                                                </div>
                                             </li>
-                                            <li class="solutions-dropdown-menu__use-cases-list-container solutions-dropdown-menu__use-cases-list-container--other w-auto">
-                                                <h5 class="solutions-dropdown-menu__use-case-type font-size-12 font-weight-bold mb-3 text-uppercase">Other use cases</h5>
-                                                <ul class="solutions-dropdown-menu__use-cases-list solutions-dropdown-menu__use-cases-list--other">
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="Account&ndash;Based Marketing" href="/use-cases/ip-data-for-abm">Account&ndash;Based Marketing</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="Financial Technology" href="/use-cases/ip-data-for-fintech">Financial Technology</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="GameTech" href="/use-cases/ip-data-for-gametech">GameTech</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="GameTech" href="/use-cases/ip-data-for-localization">Localization</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="Governments and Institutions" href="/use-cases/ip-data-for-governments">Governments and Institutions</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="TravelTech" href="/use-cases/ip-data-for-traveltech">TravelTech</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="Web Personalization" href="/use-cases/ip-based-website-customization">Web Personalization</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="Medtech and Healthcare" href="/use-cases/ip-data-medtech-healthcare">Medtech and Healthcare</a>
-                                                        </h6>
-                                                    </li>
-                                                    <li class="w-auto">
-                                                        <h6 class="solutions-dropdown-menu__use-case">
-                                                            <a class="p-0" title="EdTech" href="/use-cases/ip-data-for-edtech">EdTech</a>
-                                                        </h6>
-                                                    </li>
-                                                </ul>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">IP to Mobile Carrier</h5>
+                                                <p>Identify carrier networks</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/ip-carrier-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/mobile-ip-database">Database Download</a>
+                                                </div>
                                             </li>
-                                        </ul>
-                                    </li>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">IP Whois</h5>
+                                                <p>IP ownership data</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/whois-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/whois-database">Database Download</a>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">IP Ranges</h5>
+                                                <p>Target specific IP ranges</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/ranges-api">API</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">IP to Company</h5>
+                                                <p>Identify company networks</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/ip-company-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/ip-company-database">Database Download</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">Hosted Domains</h5>
+                                                <p>Find domains per IP</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/reverse-ip-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/hosted-domains-database">Database Download</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">Abuse Contact</h5>
+                                                <p>Find IP abuse contacts</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/ip-abuse-contact-api">API</a>
+                                                    <a style="color: #0095E5;" href="/products/ip-abuse-contact-database">Database Download</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="dropdown-menu-data__title">Residental Proxy</h5>
+                                                <p>Identify residential proxies</p>
+                                                <div class="dropdown-menu-data__links">
+                                                    <a style="color: #0095E5;" href="/products/residential-proxy">Database Download</a>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </div>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWhyIPinfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Why IPinfo?</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownWhyIPinfo">
-                                <ul>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <h5><a href="/about">About us</a></h5>
-                                                <p><a href="/about">How we became the most reliable, accurate, and in-depth source of IP address data</a></p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <h5><a href="/customers">Customer stories</a></h5>
-                                                <p><a href="/customers">How future-oriented companies use IPinfo to reach their goals</a></p>
-                                            </li>
+                            <div class="dropdown-menu dropdown-menu-with-left-nav dropdown-menu-why-ipinfo" aria-labelledby="navbarDropdownWhyIPinfo">
+                                <ul class="dropdown-menu-with-left-nav__container">
+                                    <div class="dropdown-menu-with-left-nav__container-left-nav">
+                                        <li class="dropdown-left-nav-item">
+                                            <h5><a href="/about">About us</a></h5>
+                                            <p><a href="/about">How we became the most reliable, accurate, and in-depth source of IP address data</a></p>
+                                            <a class="dropdown-left-nav-item__link" href="/about">Learn More About Us</a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-menu-with-left-nav__container-main-content">
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
                                             <li>
                                                 <h5><a href="/data-research">Research</a></h5>
                                                 <p><a href="/data-research">How IPinfo is at the cutting edge of IP data research</a></p>
                                             </li>
                                             <li>
+                                                <h5><a href="/community">Our Community</a></h5>
+                                                <p><a href="/community">Learn from other IT professionals and data analysts, and share innovative use cases using IPinfo's accurate data</a></p>
+                                            </li>
+                                            <li>
+                                                <h5><a href="/customers">Customer stories</a></h5>
+                                                <p><a href="/customers">How future-oriented companies use IPinfo to reach their goals</a></p>
+                                            </li>
+                                        </div>
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
+                                            <li>
                                                 <h5><a href="/ip-data">Data</a></h5>
                                                 <p><a href="/ip-data">How we deliver the most accurate IP datasets</a></p>
                                             </li>
-                                        </ul>
-                                    </li>
+                                            <li>
+                                                <h5><a href="/probe-network">Probe Network</a></h5>
+                                                <p><a href="/probe-network">See how our proprietary data collection and validation process ensures unmatched accuracy</a></p>
+                                            </li>
+                                            <li>
+                                                <h5><a href="/use-cases">Use Cases</a></h5>
+                                                <p><a href="/use-cases">How IPinfo is used in real-world scenarios</a></p>
+                                            </li>
+                                        </div>
+                                    </div>
                                 </ul>
                             </div>
                         </li>
@@ -359,22 +422,20 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-                                <ul>
-                                  <li>
-                                        <ul>
-                                            <li>
-                                                <h5><a href="/faq">Help center</a></h5>
-                                                <p><a href="/faq">Get started with IP data using our detailed guides</a></p>
-                                            </li>
-                                            <li>
-                                                <h5><a href="/community">Community</a></h5>
-                                                <p><a href="/community">Learn and share with a global community of data professionals</a></p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
+                            <div class="dropdown-menu dropdown-menu-with-left-nav dropdown-menu-resources" aria-labelledby="navbarDropdownResources">
+                                <ul class="dropdown-menu-with-left-nav__container">
+                                    <div class="dropdown-menu-with-left-nav__container-left-nav">
+                                        <li>
+                                            <h5><a href="/faq">Help center</a></h5>
+                                            <p><a href="/faq">Get started with IP data using our detailed guides</a></p>
+                                        </li>
+                                        <li>
+                                            <h5><a href="/community">Community</a></h5>
+                                            <p><a href="/community">Learn and share with a global community of data professionals</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-menu-with-left-nav__container-main-content">
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
                                             <li>
                                                 <h6><a href="/blog/">Blog</a></h6>
                                                 <p><a href="/blog/">Stay up-to-date with IP data trends</a></p>
@@ -383,9 +444,11 @@
                                                 <h6><a href="/e-books">E-books</a></h6>
                                                 <p><a href="/e-books">Discover how to use IP data better</a></p>
                                             </li>
+                                        </div>
+                                        <div class="dropdown-menu-with-left-nav__container-main-content-col">
                                             <li>
                                                 <h6><a href="/tools">Tools</a></h6>
-                                                <ul>
+                                                <ul class="dropdown-menu-resources__tools-list">
                                                     <li><a href="/tools/cidr-to-ip-range-converter">CIDR to IP Range Converter</a></li>
                                                     <li><a href="/tools/reverse-dns-lookup">Reverse DNS (rDNS) Lookup</a></li>
                                                     <li><a href="/tools/summarize-ips">Summarize IPs</a></li>
@@ -394,8 +457,8 @@
                                                     <li><a href="https://github.com/ipinfo/cli" target="_blank">CLI ↗</a></li>
                                                 </ul>
                                             </li>
-                                        </ul>
-                                    </li>
+                                        </div>
+                                    </div>
                                 </ul>
                             </div>
                         </li>
@@ -5779,68 +5842,64 @@ Source:         AAAA
             <div class="pb-12 lg_pb-16">
                 <ul class="flex flex-col justify-between gap-6 md_grid md_grid-cols-4 md_gap-5 lg_flex lg_flex-row lg_gap-0">
                     <li>
-                        <span class="heading-h5 mb-5 block">Database Downloads</span>
+                        <span class="heading-h5 mb-5 block">Products</span>
                         <ul class="space-y-3">
-                            <li><a class="text-charcoal-blue-80" href="/products/ip-geolocation-database">IP Geolocation Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/ip-abuse-contact-database">Abuse Contact Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/ip-company-database">IP to Company Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/anonymous-ip-database">IP to Privacy Detection Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/mobile-ip-database">IP to Mobile Carrier Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/hosted-domains-database">IP to Hosted Domains Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/asn-database">IP to ASN Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/whois-database">IP Whois Database</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/free-ip-database">Free IP to Country + ASN</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/lite">IPinfo Lite</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/core">IPinfo Core</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/standard">IPinfo Standard</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/business">IPinfo Business</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/enterprise">IPinfo Enterprise</a></li>
                         </ul>
                     </li>
                     <li>
-                        <span class="heading-h5 mb-5 block">API Products</span>
+                        <span class="heading-h5 mb-5 block">Our Data - API</span>
                         <ul class="space-y-3">
-                            <li><a class="text-charcoal-blue-80" href="/products/ip-geolocation-api">IP Geolocation API</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/ranges-api">IP Ranges API</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/proxy-vpn-detection-api">Privacy Detection API</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/ip-geolocation-api">IP to Geolocation</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/ranges-api">IP Ranges</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/proxy-vpn-detection-api">Privacy Detection</a></li>
                             <li><a class="text-charcoal-blue-80" href="/products/ip-company-api">IP to Company</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/asn-api">ASN API</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/reverse-ip-api">Hosted Domains API</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/asn-api">ASN</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/reverse-ip-api">Hosted Domains</a></li>
                             <li><a class="text-charcoal-blue-80" href="/products/ip-carrier-api">IP to Mobile Carrier</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/ip-abuse-contact-api">Abuse Contact API</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/whois-api">IP Whois API</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/ip-abuse-contact-api">Abuse Contact</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/whois-api">IP Whois</a></li>
                         </ul>
                     </li>
                     <li>
-                        <span class="heading-h5 mb-5 block">Data</span>
+                        <span class="heading-h5 mb-5 block">Our data - DB Download</span>
                         <ul class="space-y-3">
-                            <li><a class="text-charcoal-blue-80" href="/ip-data">Our data</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/what-is-my-ip">My IP Address</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/tools">Tools</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/countries">Country Internet Data</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/accuracy">Global Geolocation Accuracy</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/tags">IP Address Tags</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/hosting">Hosted domains by ASNs</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/ips">IP Ranges</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/free-ip-database">Open access</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/ip-geolocation-database">IP to Geolocation</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/anonymous-ip-database">Privacy Detection</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/ip-company-database">IP to Company</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/asn-database">ASN</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/hosted-domains-database">Hosted Domains</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/mobile-ip-database">IP to Mobile Carrier</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/abuse-contact-database">Abuse Contact</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/whois-database">IP Whois</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/residental-proxy">Residential Proxy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="heading-h5 mb-5 block">Why IPinfo?</span>
+                        <ul class="space-y-3">
+                            <li><a class="text-charcoal-blue-80" href="/pricing">Pricing</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/about">About Us</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/data-research">Research</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/community">Our Community</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/customers">Customer stories</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/ip-data">Data</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/probe-network">Probe Network</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/use-cases">Use Cases</a></li>
                         </ul>
                     </li>
                     <li>
                         <span class="heading-h5 mb-5 block">Resources</span>
                         <ul class="space-y-3">
-                            <li><a class="text-charcoal-blue-80" href="/developers">Documentation</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/developers/libraries">Libraries</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/faq">Help Centre</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/faq">Help Center</a></li>
                             <li><a class="text-charcoal-blue-80" href="/blog">Blog</a></li>
                             <li><a class="text-charcoal-blue-80" href="/e-books">E-books</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/use-cases">Use cases</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/integrations">Integrations</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/ip-address-information">What is an IP address?</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="heading-h5 mb-5 block">Company</span>
-                        <ul class="space-y-3">
-                            <li><a class="text-charcoal-blue-80" href="/about">About</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/jobs">Careers</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/community">Community</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/customers">Customers</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/support">Contact Support</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/tools">Tools</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/developers">Docs</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -5947,7 +6006,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MTcyLjE3Mi4xODguMjI%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MTcyLjE5MS4xMzEuMTQ%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
