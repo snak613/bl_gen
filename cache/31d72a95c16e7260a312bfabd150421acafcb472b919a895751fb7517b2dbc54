@@ -5966,11 +5966,11 @@
         "latest_time": "2025-05-30T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250530092347-fae3314c-9025-40e8-aa2f-301bc44e65ad",
-    "process_time": 429,
-    "server_id": "app188",
+    "query_id": "20250530094233-20ba6db8-1825-4183-92f3-9a269001e0e4",
+    "process_time": 289,
+    "server_id": "app184",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-05-30T09:23:48.238923"
+    "time": "2025-05-30T09:42:33.596125"
 }
