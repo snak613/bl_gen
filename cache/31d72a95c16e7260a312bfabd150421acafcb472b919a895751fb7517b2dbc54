@@ -5950,11 +5950,11 @@
         "latest_time": "2025-06-01T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250601202348-fa3ea657-5ff8-4e7d-a609-01d3204150d6",
-    "process_time": 361,
-    "server_id": "app160",
+    "query_id": "20250601204225-02518c16-ad1d-4c6f-9f84-0b721c01f6f2",
+    "process_time": 374,
+    "server_id": "app192",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-01T20:23:48.778397"
+    "time": "2025-06-01T20:42:25.728061"
 }
