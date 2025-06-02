@@ -8066,11 +8066,11 @@
         "latest_time": "2025-06-02T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250602212209-0973c926-1fce-48c8-80fb-b2830999cb5a",
-    "process_time": 431,
-    "server_id": "app162",
+    "query_id": "20250602214212-25d8725c-fa11-45a6-915c-8ea61ec3cc6f",
+    "process_time": 423,
+    "server_id": "app190",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-02T21:22:09.606738"
+    "time": "2025-06-02T21:42:13.188565"
 }
