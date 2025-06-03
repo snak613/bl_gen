@@ -521,12 +521,11 @@
                     <form method="POST" action="/?redirect=true">
     <div class="input-group">
         <input name="ip" placeholder="Search an IP or AS number" />
-        <div class="input-group-append">
+        <button class="input-group-append" type="submit">
             <img src="https://cdn.ipinfo.io/static/images/ip-asn-icons/search.svg" />
-        </div>
+        </button>
     </div>
 </form>
-
 
                     <ul class="nav flex-column ds21-vertical-menu mt-3" id="menu-items">
                         <li class="nav-item">
@@ -6364,7 +6363,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MTMuOTMuMTgzLjIxMQ%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMzkuMzQuNDQ%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
