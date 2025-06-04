@@ -9,51 +9,15 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": false,
+    "cached": true,
     "data": {
         "prefixes": [
-            {
-                "prefix": "151.207.40.0/22",
-                "timelines": [
-                    {
-                        "starttime": "2025-05-20T16:00:00",
-                        "endtime": "2025-06-03T16:00:00"
-                    }
-                ]
-            },
             {
                 "prefix": "2608:1c1:8::/48",
                 "timelines": [
                     {
-                        "starttime": "2025-05-20T16:00:00",
-                        "endtime": "2025-06-03T16:00:00"
-                    }
-                ]
-            },
-            {
-                "prefix": "2608:1c1:6::/48",
-                "timelines": [
-                    {
-                        "starttime": "2025-05-20T16:00:00",
-                        "endtime": "2025-06-03T16:00:00"
-                    }
-                ]
-            },
-            {
-                "prefix": "170.110.229.0/24",
-                "timelines": [
-                    {
-                        "starttime": "2025-05-20T16:00:00",
-                        "endtime": "2025-06-03T16:00:00"
-                    }
-                ]
-            },
-            {
-                "prefix": "2608:1c1:7::/48",
-                "timelines": [
-                    {
-                        "starttime": "2025-05-20T16:00:00",
-                        "endtime": "2025-06-03T16:00:00"
+                        "starttime": "2025-05-21T00:00:00",
+                        "endtime": "2025-06-04T00:00:00"
                     }
                 ]
             },
@@ -61,23 +25,59 @@
                 "prefix": "151.207.44.0/22",
                 "timelines": [
                     {
-                        "starttime": "2025-05-20T16:00:00",
-                        "endtime": "2025-06-03T16:00:00"
+                        "starttime": "2025-05-21T00:00:00",
+                        "endtime": "2025-06-04T00:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "151.207.40.0/22",
+                "timelines": [
+                    {
+                        "starttime": "2025-05-21T00:00:00",
+                        "endtime": "2025-06-04T00:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "2608:1c1:6::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-05-21T00:00:00",
+                        "endtime": "2025-06-04T00:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "170.110.229.0/24",
+                "timelines": [
+                    {
+                        "starttime": "2025-05-21T00:00:00",
+                        "endtime": "2025-06-04T00:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "2608:1c1:7::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-05-21T00:00:00",
+                        "endtime": "2025-06-04T00:00:00"
                     }
                 ]
             }
         ],
-        "query_starttime": "2025-05-20T16:00:00",
-        "query_endtime": "2025-06-03T16:00:00",
+        "query_starttime": "2025-05-21T00:00:00",
+        "query_endtime": "2025-06-04T00:00:00",
         "resource": "12076",
-        "latest_time": "2025-06-03T16:00:00",
+        "latest_time": "2025-06-04T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250604015254-d44f1dca-7e91-4f96-af25-c633ae2afdda",
-    "process_time": 17,
-    "server_id": "app187",
+    "query_id": "20250604031809-832fac5f-6282-477e-b820-02a480aa1372",
+    "process_time": 1,
+    "server_id": "app169",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-04T01:52:55.014638"
+    "time": "2025-06-04T03:18:09.734929"
 }
