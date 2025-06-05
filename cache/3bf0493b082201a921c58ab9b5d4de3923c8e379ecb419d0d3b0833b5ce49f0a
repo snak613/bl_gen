@@ -3533,7 +3533,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 433 peers
+                                    are 431 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -3701,24 +3701,6 @@ Source:         AAAA
                 
                 <td>
                     
-                        <a href="/AS11670"
-                        class="charcoal-link "
-                        >AS11670</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        Toronto Internet Exchange Community
-                    
-                </td>
-                
-            </tr>
-            
-            <tr >
-                
-                <td>
-                    
                         <a href="/AS11845"
                         class="charcoal-link "
                         >AS11845</a>
@@ -3733,7 +3715,7 @@ Source:         AAAA
                 
             </tr>
             
-            <tr class="collapse collapse-peers-table">
+            <tr >
                 
                 <td>
                     
@@ -4520,24 +4502,6 @@ Source:         AAAA
                 <td>
                     
                         Data-Beam Business Solution
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS151326"
-                        class="charcoal-link "
-                        >AS151326</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        DCConnect Communication Pte. Ltd.
                     
                 </td>
                 
@@ -5353,6 +5317,42 @@ Source:         AAAA
                 
             </tr>
             
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
+                        <a href="/AS199524"
+                        class="charcoal-link "
+                        >AS199524</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        G-Core Labs S.A.
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
+                        <a href="/AS199938"
+                        class="charcoal-link "
+                        >AS199938</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Netzwerge GmbH
+                    
+                </td>
+                
+            </tr>
+            
         </tbody>
     </table>
 
@@ -6048,9 +6048,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS1690</h4>
-                        <p class="opacity-100">BOCES Southern Westchester</p>
-                        <a href="/AS1690" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS12057</h4>
+                        <p class="opacity-100">LiveVox, INC.</p>
+                        <a href="/AS12057" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6059,20 +6059,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS213189</h4>
-                        <p class="opacity-100">Staclar, Inc.</p>
-                        <a href="/AS213189" class="card-cover">More details</a>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card h-100 card-standard is-clickable no-image">
-                    <div class="card-body">
-                        <h4 class="card-title mb-2">AS357</h4>
+                        <h4 class="card-title mb-2">AS1555</h4>
                         <p class="opacity-100">DoD Network Information Center</p>
-                        <a href="/AS357" class="card-cover">More details</a>
+                        <a href="/AS1555" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6081,9 +6070,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS394723</h4>
-                        <p class="opacity-100">Fulton County Schools</p>
-                        <a href="/AS394723" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS182</h4>
+                        <p class="opacity-100">Merit Network Inc.</p>
+                        <a href="/AS182" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6092,9 +6081,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS396817</h4>
-                        <p class="opacity-100">VeriSign Global Registry Services</p>
-                        <a href="/AS396817" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS19504</h4>
+                        <p class="opacity-100">WTC Communications, Inc.</p>
+                        <a href="/AS19504" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6103,9 +6092,20 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS398156</h4>
-                        <p class="opacity-100">ACE Fiber</p>
-                        <a href="/AS398156" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS20368</h4>
+                        <p class="opacity-100">SMART CITY NETWORKS, LIMITED PARTNERSHIP</p>
+                        <a href="/AS20368" class="card-cover">More details</a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card h-100 card-standard is-clickable no-image">
+                    <div class="card-body">
+                        <h4 class="card-title mb-2">AS23403</h4>
+                        <p class="opacity-100">Half Bat LLC</p>
+                        <a href="/AS23403" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -6370,7 +6370,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MTcyLjE3Ny4xNzMuNTM%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuNy40My45OA%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
