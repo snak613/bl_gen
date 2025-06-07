@@ -171,6 +171,10 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td></td>
                 <td></td>
               </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-07-17-55-04">2025-06-07-17-55-04</a></td>
+                <td>2025-06-07 17:55</td>
+                <td>403.2 KiB</td>
+              </tr><tr>
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-07-16-55-04">2025-06-07-16-55-04</a></td>
                 <td>2025-06-07 16:55</td>
                 <td>403.2 KiB</td>
@@ -454,10 +458,6 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-04-18-54-24">2025-06-04-18-54-24</a></td>
                 <td>2025-06-04 18:54</td>
                 <td>408.9 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-04-17-54-24">2025-06-04-17-54-24</a></td>
-                <td>2025-06-04 17:54</td>
-                <td>408.8 KiB</td>
               </tr>
             </tbody>
           </table>
