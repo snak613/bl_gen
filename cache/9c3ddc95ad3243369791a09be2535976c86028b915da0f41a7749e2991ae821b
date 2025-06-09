@@ -8057,11 +8057,11 @@
         "latest_time": "2025-06-09T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250609152458-51fd1042-7ab6-42c7-9d0f-bcacfaf44cac",
-    "process_time": 448,
-    "server_id": "app189",
+    "query_id": "20250609154407-795b3237-75b1-4e70-bf11-951eb57dff80",
+    "process_time": 500,
+    "server_id": "app162",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-09T15:24:59.123082"
+    "time": "2025-06-09T15:44:08.390676"
 }
