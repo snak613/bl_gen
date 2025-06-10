@@ -8062,11 +8062,11 @@
         "latest_time": "2025-06-10T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250610154341-46a58bc9-3ebe-44fd-9786-7938a9c45ff1",
-    "process_time": 517,
-    "server_id": "app171",
+    "query_id": "20250610162948-8188f5ef-44ee-41d2-998d-288edc936771",
+    "process_time": 483,
+    "server_id": "app174",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-10T15:43:42.094517"
+    "time": "2025-06-10T16:29:48.896923"
 }
