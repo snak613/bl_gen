@@ -8058,11 +8058,11 @@
         "latest_time": "2025-06-10T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250610202538-00f572dc-2c9f-40f1-8e6e-72a53a9f4c6c",
-    "process_time": 511,
-    "server_id": "app162",
+    "query_id": "20250610204311-8697226b-9c13-4cb5-bf6c-a2762b324a8f",
+    "process_time": 420,
+    "server_id": "app164",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-10T20:25:38.984773"
+    "time": "2025-06-10T20:43:11.653514"
 }
