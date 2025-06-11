@@ -8067,11 +8067,11 @@
         "latest_time": "2025-06-11T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250611054544-5b78e499-b4a6-47c9-bc85-3cf2ecba3edb",
-    "process_time": 482,
-    "server_id": "app179",
+    "query_id": "20250611063319-b4b5f711-4f00-4c4c-b405-fa0b55bb3d58",
+    "process_time": 426,
+    "server_id": "app191",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-11T05:45:44.858557"
+    "time": "2025-06-11T06:33:20.343873"
 }
