@@ -6009,11 +6009,11 @@
         "latest_time": "2025-06-11T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250611193916-da4ab3e6-5742-45e6-bbed-38d05b0cbfe9",
-    "process_time": 355,
-    "server_id": "app196",
+    "query_id": "20250611202410-93caf683-de1f-4ac0-b462-aab31b140bf9",
+    "process_time": 325,
+    "server_id": "app180",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-11T19:39:16.954388"
+    "time": "2025-06-11T20:24:11.192161"
 }
