@@ -8089,11 +8089,11 @@
         "latest_time": "2025-06-13T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250613172004-0c5e740b-d10e-4e8b-9c09-952fc3b71944",
-    "process_time": 532,
-    "server_id": "app161",
+    "query_id": "20250613174255-8e5b3762-3a11-4df5-aac2-e1f9d9f79cdc",
+    "process_time": 453,
+    "server_id": "app180",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-13T17:20:04.855465"
+    "time": "2025-06-13T17:42:55.894875"
 }
