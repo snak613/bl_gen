@@ -8093,11 +8093,11 @@
         "latest_time": "2025-06-15T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250615124159-afcfa063-07a9-42b3-b11d-3227018eea7f",
-    "process_time": 426,
-    "server_id": "app171",
+    "query_id": "20250615132927-1dbf7876-06bd-406a-bb2d-46fba796b62b",
+    "process_time": 471,
+    "server_id": "app163",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-15T12:42:00.070543"
+    "time": "2025-06-15T13:29:27.837314"
 }
