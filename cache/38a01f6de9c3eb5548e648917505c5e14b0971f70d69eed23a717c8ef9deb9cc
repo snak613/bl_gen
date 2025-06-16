@@ -9,39 +9,39 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": true,
+    "cached": false,
     "data": {
         "prefixes": [
-            {
-                "prefix": "2a01:110:9008::/48",
-                "timelines": [
-                    {
-                        "starttime": "2025-06-02T00:00:00",
-                        "endtime": "2025-06-16T00:00:00"
-                    }
-                ]
-            },
             {
                 "prefix": "194.69.104.0/23",
                 "timelines": [
                     {
-                        "starttime": "2025-06-02T00:00:00",
-                        "endtime": "2025-06-16T00:00:00"
+                        "starttime": "2025-06-02T08:00:00",
+                        "endtime": "2025-06-16T08:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "2a01:110:9008::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-06-02T08:00:00",
+                        "endtime": "2025-06-16T08:00:00"
                     }
                 ]
             }
         ],
-        "query_starttime": "2025-06-02T00:00:00",
-        "query_endtime": "2025-06-16T00:00:00",
+        "query_starttime": "2025-06-02T08:00:00",
+        "query_endtime": "2025-06-16T08:00:00",
         "resource": "35106",
-        "latest_time": "2025-06-16T00:00:00",
+        "latest_time": "2025-06-16T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250616104848-e393ada8-4104-4199-91ea-3d5db055114b",
-    "process_time": 1,
-    "server_id": "app173",
+    "query_id": "20250616112001-6b758c27-d268-4938-95b1-cb8c597ee4dc",
+    "process_time": 17,
+    "server_id": "app188",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-16T10:48:48.174859"
+    "time": "2025-06-16T11:20:01.179959"
 }
