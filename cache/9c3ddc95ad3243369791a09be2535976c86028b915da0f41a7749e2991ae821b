@@ -8134,11 +8134,11 @@
         "latest_time": "2025-06-17T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250617191833-f20d5121-db49-4b5c-a513-e53e614cd0f2",
-    "process_time": 498,
-    "server_id": "app182",
+    "query_id": "20250617194506-c075ce87-c8c4-45db-8215-f4b3b7cd1012",
+    "process_time": 474,
+    "server_id": "app171",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-17T19:18:33.922379"
+    "time": "2025-06-17T19:45:06.853405"
 }
