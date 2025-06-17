@@ -8138,11 +8138,11 @@
         "latest_time": "2025-06-17T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250617072225-cf93b464-51a8-44d7-9223-cc0932c88765",
-    "process_time": 438,
-    "server_id": "app192",
+    "query_id": "20250617074310-ff5cbff1-771e-4bc1-bbc7-fd4df9f94dd2",
+    "process_time": 448,
+    "server_id": "app181",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-17T07:22:25.936717"
+    "time": "2025-06-17T07:43:10.756998"
 }
