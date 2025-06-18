@@ -8143,11 +8143,11 @@
         "latest_time": "2025-06-18T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250618052241-f9336f18-31b9-4eb7-81e0-15161d7e27b1",
-    "process_time": 444,
-    "server_id": "app180",
+    "query_id": "20250618054526-3d29d672-16ef-4c54-a403-32054ba7cd52",
+    "process_time": 432,
+    "server_id": "app199",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-18T05:22:41.766461"
+    "time": "2025-06-18T05:45:26.583903"
 }
