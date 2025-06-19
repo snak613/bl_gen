@@ -6020,11 +6020,11 @@
         "latest_time": "2025-06-19T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250619222109-ed186e95-e9f8-4cf1-9ce2-217deae51bc4",
-    "process_time": 355,
-    "server_id": "app189",
+    "query_id": "20250619224346-7a0e45f7-9730-457b-a6a2-9a670708dfe2",
+    "process_time": 325,
+    "server_id": "app193",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-19T22:21:09.786141"
+    "time": "2025-06-19T22:43:46.689156"
 }
