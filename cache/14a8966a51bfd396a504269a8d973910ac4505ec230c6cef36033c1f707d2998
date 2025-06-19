@@ -9,33 +9,15 @@
     "version": "1.2",
     "data_call_name": "announced-prefixes",
     "data_call_status": "supported",
-    "cached": true,
+    "cached": false,
     "data": {
         "prefixes": [
-            {
-                "prefix": "151.207.40.0/22",
-                "timelines": [
-                    {
-                        "starttime": "2025-06-05T00:00:00",
-                        "endtime": "2025-06-19T00:00:00"
-                    }
-                ]
-            },
             {
                 "prefix": "2608:1c1:8::/48",
                 "timelines": [
                     {
-                        "starttime": "2025-06-05T00:00:00",
-                        "endtime": "2025-06-19T00:00:00"
-                    }
-                ]
-            },
-            {
-                "prefix": "2608:1c1:7::/48",
-                "timelines": [
-                    {
-                        "starttime": "2025-06-05T00:00:00",
-                        "endtime": "2025-06-19T00:00:00"
+                        "starttime": "2025-06-05T08:00:00",
+                        "endtime": "2025-06-19T08:00:00"
                     }
                 ]
             },
@@ -43,8 +25,17 @@
                 "prefix": "170.110.229.0/24",
                 "timelines": [
                     {
-                        "starttime": "2025-06-05T00:00:00",
-                        "endtime": "2025-06-19T00:00:00"
+                        "starttime": "2025-06-05T08:00:00",
+                        "endtime": "2025-06-19T08:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "151.207.40.0/22",
+                "timelines": [
+                    {
+                        "starttime": "2025-06-05T08:00:00",
+                        "endtime": "2025-06-19T08:00:00"
                     }
                 ]
             },
@@ -52,8 +43,17 @@
                 "prefix": "151.207.44.0/22",
                 "timelines": [
                     {
-                        "starttime": "2025-06-05T00:00:00",
-                        "endtime": "2025-06-19T00:00:00"
+                        "starttime": "2025-06-05T08:00:00",
+                        "endtime": "2025-06-19T08:00:00"
+                    }
+                ]
+            },
+            {
+                "prefix": "2608:1c1:7::/48",
+                "timelines": [
+                    {
+                        "starttime": "2025-06-05T08:00:00",
+                        "endtime": "2025-06-19T08:00:00"
                     }
                 ]
             },
@@ -61,23 +61,23 @@
                 "prefix": "2608:1c1:6::/48",
                 "timelines": [
                     {
-                        "starttime": "2025-06-05T00:00:00",
-                        "endtime": "2025-06-19T00:00:00"
+                        "starttime": "2025-06-05T08:00:00",
+                        "endtime": "2025-06-19T08:00:00"
                     }
                 ]
             }
         ],
-        "query_starttime": "2025-06-05T00:00:00",
-        "query_endtime": "2025-06-19T00:00:00",
+        "query_starttime": "2025-06-05T08:00:00",
+        "query_endtime": "2025-06-19T08:00:00",
         "resource": "12076",
-        "latest_time": "2025-06-19T00:00:00",
+        "latest_time": "2025-06-19T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250619104719-7edc7af1-099b-4c0c-8e87-474cb67acd9c",
-    "process_time": 1,
-    "server_id": "app199",
+    "query_id": "20250619111938-bea42dac-e001-45a9-8275-fd6306a8bf29",
+    "process_time": 19,
+    "server_id": "app191",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-19T10:47:19.839940"
+    "time": "2025-06-19T11:19:38.180637"
 }
