@@ -8152,11 +8152,11 @@
         "latest_time": "2025-06-20T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250620204327-2c89a2ca-fa17-4174-adde-78e20f7f61ba",
-    "process_time": 507,
-    "server_id": "app185",
+    "query_id": "20250620212010-3a7b35d1-4bb5-4366-89c5-22b5131549b9",
+    "process_time": 448,
+    "server_id": "app196",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-20T20:43:28.076866"
+    "time": "2025-06-20T21:20:11.106499"
 }
