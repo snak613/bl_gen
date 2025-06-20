@@ -6031,11 +6031,11 @@
         "latest_time": "2025-06-20T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250620193930-58ee2e79-6c30-4ef0-b2fb-c4637e51564c",
-    "process_time": 327,
-    "server_id": "app186",
+    "query_id": "20250620202453-253e0805-fe4d-43d2-946c-33b01f335f8c",
+    "process_time": 347,
+    "server_id": "app181",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-20T19:39:30.936783"
+    "time": "2025-06-20T20:24:53.489524"
 }
