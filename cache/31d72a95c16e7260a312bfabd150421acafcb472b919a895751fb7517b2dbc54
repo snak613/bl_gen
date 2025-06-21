@@ -6040,11 +6040,11 @@
         "latest_time": "2025-06-21T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250621222013-27b205c7-5fe3-4af6-90f8-dec2b165a57d",
-    "process_time": 375,
-    "server_id": "app160",
+    "query_id": "20250621224309-2cc7afd7-dfec-4aa1-b1fd-faa8a4216999",
+    "process_time": 327,
+    "server_id": "app162",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-21T22:20:13.982707"
+    "time": "2025-06-21T22:43:10.077914"
 }
