@@ -80,7 +80,6 @@
             h6 {
                 margin: 12px 0;
             }
-
             h1{
                 line-height: 28px;
             }
@@ -383,9 +382,15 @@
               }
               .article-header-info{
                display: flex;
+               align-items: center;
+               justify-content: space-between;
+              }
+              .article-header-details{
+                display: flex;
                 flex-direction: row;
                 place-content: flex-start start;
                 align-items: flex-start;
+                gap: 16px;
               }
               .article-header-info > div:not(:last-child) {
                 margin-right: 16px;
@@ -751,13 +756,19 @@
 
                     </div>
                     <div class="article-header-info">
-                        <div class="flex-row row-gap-8 article-updated-time">
+                        <div class="article-header-details">
+                            <div class="flex-row row-gap-8 article-updated-time">
                             <span class="material-icons article-updated-date-icon">book</span>
                             <h4 class="wolken-h4">Article ID: 150693</h4>
                         </div>
                         <div class="flex-row row-gap-8 article-updated-time">
                             <span class="material-icons article-updated-date-icon_cal">calendar_today</span>
                             <h4 class="wolken-h4">Updated On: <span id="date_time"></span></h4>
+                        </div>
+                        </div>
+                        <div>
+                        
+                         
                         </div>
                     </div>
                     <div class="article-detail-card">
@@ -1009,6 +1020,7 @@
             </div>
         </div>
     </body>
+
     <script>
 
         var apiDomain =  'https://api-broadcomcms-software.wolkenservicedesk.com/';
@@ -1020,11 +1032,27 @@
         var attachmentVos = '';
         var kb_public_page_domain = 'broadcomcms-software.wolkenservicedesk.com'
         var kbDownloadDomain = 'broadcomcms-software.wolkenservicedesk.com';
-        var regularAttachment = false
-
+        var kbArticleNumber = '150693';
+        var regularAttachment = false;
+        var loginRequired = false;
 
 
         var feedbackConfigData = {};
+         function onSubscribeArticle(){
+            const url = `https://${kb_public_page_domain}/wolken-support/kbsearch/article?articleNumber=${kbArticleNumber}&subscribe=true`;
+            const a = document.createElement('a');
+            a.href = url;
+            a.target = '_blank'; 
+            a.rel = 'noopener noreferrer'; 
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a); 
+        }
+        function scrollToFeedback(){
+            document.querySelector('.feedback-section').scrollIntoView({
+                behavior:'smooth'
+            })
+        }
 
         document.getElementById('global-header').addEventListener('load', frameVisibilty);
         setTimeout(function ()  {
@@ -1129,6 +1157,7 @@
                 var response = JSON.parse(articleFeedbackConfigRequest.response);
                 if (response && response.data && response.data.feedbackConfigData) {
                     feedbackConfigData = response.data.feedbackConfigData;
+                    loginRequired = response && response.data && response.data.feedbackConfigData && response.data.feedbackConfigData.loginRequired;
                     document.getElementById('feedback_actionMsg').innerHTML = feedbackConfigData.actionMsg;
                 } else {
                     document.getElementsByClassName('feedback-section')[0].remove();
@@ -1196,6 +1225,16 @@
                     uid: '1fd47e1f-f7d9-11ea-beba-0242ac12000b',
                     feedback: 1
                 });
+                if(loginRequired === true){
+                    const url = `https://${kb_public_page_domain}/wolken-support/kbsearch/article?articleNumber=${kbArticleNumber}&feedback=like`;
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.target = '_blank'; 
+                    a.rel = 'noopener noreferrer'; 
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a); 
+                }
             } catch(error) {
                 console.log(error);
             }
@@ -1211,6 +1250,16 @@
             saveArticleDisLikeCount();
              document.getElementById('feedback_actionMsg').innerHTML = feedbackConfigData.yesMsg;
              document.getElementById('feedback_actions').remove();
+            if(loginRequired === true){
+                const url = `https://${kb_public_page_domain}/wolken-support/kbsearch/article?articleNumber=${kbArticleNumber}&feedback=dislike`;
+                const a = document.createElement('a');
+                a.href = url;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a); 
+            }
         }
 
         function redirectToFeedbackPage() {
