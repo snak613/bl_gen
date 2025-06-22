@@ -6049,11 +6049,11 @@
         "latest_time": "2025-06-22T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250622111752-81468912-0be9-420b-bcbf-f8142ee8310c",
-    "process_time": 350,
-    "server_id": "app199",
+    "query_id": "20250622114013-cba721f4-645a-4e48-8c02-08700a5be932",
+    "process_time": 314,
+    "server_id": "app181",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-22T11:17:52.662367"
+    "time": "2025-06-22T11:40:13.511966"
 }
