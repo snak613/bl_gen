@@ -721,11 +721,11 @@
         "latest_time": "2025-06-22T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250622124141-2fa3edbd-41b0-45d5-8203-773d828b2811",
-    "process_time": 55,
-    "server_id": "app190",
+    "query_id": "20250622132919-69c3af32-99ea-4230-a066-0904e2dd3ce3",
+    "process_time": 47,
+    "server_id": "app191",
     "build_version": "main-2025.05.26",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-22T12:41:41.600504"
+    "time": "2025-06-22T13:29:19.978492"
 }
