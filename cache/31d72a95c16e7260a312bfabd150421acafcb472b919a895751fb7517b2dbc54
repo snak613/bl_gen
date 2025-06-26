@@ -6229,11 +6229,11 @@
         "latest_time": "2025-06-26T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250626204750-a92273d2-074e-4745-9999-111f708eb71f",
-    "process_time": 320,
-    "server_id": "app189",
+    "query_id": "20250626212539-b9f85b17-4960-45fc-a34c-e3ce96c0f2f4",
+    "process_time": 363,
+    "server_id": "app160",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-26T20:47:50.378436"
+    "time": "2025-06-26T21:25:39.523344"
 }
