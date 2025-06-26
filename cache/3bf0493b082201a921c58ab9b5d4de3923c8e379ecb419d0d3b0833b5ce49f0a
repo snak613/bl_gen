@@ -256,8 +256,8 @@
                                                 <p><a href="/lite">Country-level geo and ASN IP data: accurate, unlimited and free</a></p>
                                             </li>
                                             <li>
-                                                <h5><a href="/products/standard">IPinfo Standard</a></h5>
-                                                <p><a href="/products/standard">Detailed privacy data that includes service details</a></p>
+                                                <h5><a href="/products/plus">IPinfo Plus</a></h5>
+                                                <p><a href="/products/plus">High-resolution IP intelligence with geo/ASN change-tracking and service identification</a></p>
                                             </li>
                                             <li>
                                                 <h5><a href="/enterprise">IPinfo Enterprise</a></h5>
@@ -9153,7 +9153,7 @@ Source:         AAAA
                         <ul class="space-y-3">
                             <li><a class="text-charcoal-blue-80" href="/lite">IPinfo Lite</a></li>
                             <li><a class="text-charcoal-blue-80" href="/products/core">IPinfo Core</a></li>
-                            <li><a class="text-charcoal-blue-80" href="/products/standard">IPinfo Standard</a></li>
+                            <li><a class="text-charcoal-blue-80" href="/products/plus">IPinfo Plus</a></li>
                             <li><a class="text-charcoal-blue-80" href="/products/business">IPinfo Business</a></li>
                             <li><a class="text-charcoal-blue-80" href="/products/enterprise">IPinfo Enterprise</a></li>
                         </ul>
@@ -9313,7 +9313,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MTcyLjE4My40OC4zNQ%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MTMuNjQuMjI5LjEyNw%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
