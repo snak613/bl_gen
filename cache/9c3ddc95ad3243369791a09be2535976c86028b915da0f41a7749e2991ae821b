@@ -8201,11 +8201,11 @@
         "latest_time": "2025-06-26T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250626174448-41e64ac1-830c-43d6-987a-e0099f4a32c6",
-    "process_time": 480,
-    "server_id": "app191",
+    "query_id": "20250626183717-e8350076-a41b-4253-8fa6-a97f3575aa8b",
+    "process_time": 465,
+    "server_id": "app165",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-26T17:44:49.142690"
+    "time": "2025-06-26T18:37:18.064776"
 }
