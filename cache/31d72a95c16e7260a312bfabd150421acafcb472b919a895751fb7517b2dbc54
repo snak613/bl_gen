@@ -6202,11 +6202,11 @@
         "latest_time": "2025-06-26T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250626172431-4a50aecb-5c01-4e0c-bbf7-80139b048119",
-    "process_time": 350,
-    "server_id": "app192",
+    "query_id": "20250626174448-b01c21f0-50f8-4fc9-85b3-d2b936322a06",
+    "process_time": 544,
+    "server_id": "app174",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-26T17:24:31.376985"
+    "time": "2025-06-26T17:44:49.222293"
 }
