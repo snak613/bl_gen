@@ -8169,11 +8169,11 @@
         "latest_time": "2025-06-28T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250628083154-0e3e27f6-7b19-46a1-a323-0902cc3d8d71",
-    "process_time": 533,
-    "server_id": "app175",
+    "query_id": "20250628092817-110e8c35-5245-4ef8-9833-705a8023c6c3",
+    "process_time": 435,
+    "server_id": "app169",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-28T08:31:54.799266"
+    "time": "2025-06-28T09:28:18.410631"
 }
