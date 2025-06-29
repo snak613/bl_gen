@@ -171,6 +171,18 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
                 <td></td>
                 <td></td>
               </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-29-02-04-50">2025-06-29-02-04-50</a></td>
+                <td>2025-06-29 02:04</td>
+                <td>411.8 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-29-01-04-50">2025-06-29-01-04-50</a></td>
+                <td>2025-06-29 01:04</td>
+                <td>411.9 KiB</td>
+              </tr><tr>
+                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-29-00-04-49">2025-06-29-00-04-49</a></td>
+                <td>2025-06-29 00:04</td>
+                <td>411.8 KiB</td>
+              </tr><tr>
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-28-23-04-49">2025-06-28-23-04-49</a></td>
                 <td>2025-06-28 23:04</td>
                 <td>411.8 KiB</td>
@@ -433,18 +445,6 @@ document.write('<div class="topButton" style="display:none;"><a href="#top"><i c
               </tr><tr>
                 <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-26-02-50-59">2025-06-26-02-50-59</a></td>
                 <td>2025-06-26 02:51</td>
-                <td>408.1 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-26-01-50-59">2025-06-26-01-50-59</a></td>
-                <td>2025-06-26 01:50</td>
-                <td>408.1 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-26-00-50-59">2025-06-26-00-50-59</a></td>
-                <td>2025-06-26 00:50</td>
-                <td>408.1 KiB</td>
-              </tr><tr>
-                <td><a href="https://collector.torproject.org/recent/exit-lists/2025-06-25-23-50-59">2025-06-25-23-50-59</a></td>
-                <td>2025-06-25 23:50</td>
                 <td>408.1 KiB</td>
               </tr>
             </tbody>
