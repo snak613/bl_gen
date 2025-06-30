@@ -8173,11 +8173,11 @@
         "latest_time": "2025-06-30T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250630152940-add96c3f-1122-407f-a1f6-67fc857f46c4",
-    "process_time": 509,
-    "server_id": "app185",
+    "query_id": "20250630154802-c011d202-21f1-4181-bff4-40a4b8bf527d",
+    "process_time": 446,
+    "server_id": "app196",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-06-30T15:29:41.459599"
+    "time": "2025-06-30T15:48:03.352684"
 }
