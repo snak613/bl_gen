@@ -93,6 +93,140 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ipinfo.io/AS54538" />
     <style>
+        .navbar-search {
+            display: none;
+
+            @media (min-width: 1024px) {
+                display: block;
+                position: relative;
+            }
+        }
+
+        .navbar-search__mobile {
+            display: block;
+            margin-bottom: 16px;
+
+            @media (min-width: 1024px) {
+                display: none;
+            }
+        }
+
+        .navbar-search__input-container {
+            border: 1px solid #EEF0F1;
+            border-radius: 5px;
+            height: 40px;
+            padding: 0 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .navbar-search__input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .navbar-search__input:focus {
+            outline: none;
+        }
+
+        .navbar-search__input-command-key {
+            font-size: 14px;
+            color: #363F4F;
+            height: 24px;
+            padding: 0 5px;
+            border: 1px solid #EEF0F1;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-search__suggestions {
+            display: none;
+            position: absolute;
+            top: 44px;
+            left: 0;
+            width: 100%;
+            padding: 16px;
+            background-color: #FFFFFF;
+            border: 1px solid #EEF0F1;
+            border-radius: 5px;
+            box-shadow: 0 16px 25px rgba(30, 40, 58, 0.15);
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .navbar-search__mobile-error {
+            display: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: #E08F8F;
+            padding-top: 4px;
+        }
+
+        .navbar-search__suggestions-error {
+            display: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: #E08F8F;
+
+            padding-bottom: 8px;
+            border-bottom: 1px solid #EEF0F1;
+        }
+
+        .navbar-search__suggestions-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .navbar-search__suggestions-item > .suggestions-item__label-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1E283A;
+        }
+
+        .navbar-search__suggestions-item a {
+            color: #1E283A;
+        }
+
+        .navbar-search__suggestions-item:hover a {
+            text-decoration: underline;
+        }
+
+        .navbar-search__suggestions-item a:focus {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        .navbar-search__suggestions-item-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .navbar-search__suggestions-item.suggestions-item__with-focus .navbar-search__suggestions-item-enter-key {
+            display: block;
+        }
+
+        .navbar-search__suggestions-item-enter-key {
+            display: none;
+            color: #1E283A;
+            opacity: 0.25;
+        }
+
+        .navbar-search__suggestions-item-label-divider {
+            height: 1px;
+            width: 10px;
+            background-color: #C8CBCF;
+        }
+
         .dropdown-menu-with-left-nav {
             @media (min-width: 768px) {
                 left: -200px;
@@ -225,6 +359,115 @@
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="navbar-search">
+                    <div class="navbar-search__input-container">
+                        <form autocomplete="off">
+                            <input id="navbar-search-input" type="text" class="navbar-search__input" placeholder="Search any IP data...">
+                            <div id="navbar-search-dropdown" class="navbar-search__suggestions">
+                                <div id="navbar-search-dropdown-error" class="navbar-search__suggestions-error">
+                                    <span>Invalid IP or ASN</span>
+                                </div>
+        
+                                <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
+                                    <div class="suggestions-item__label-container">
+                                        <a href="/20.169.216.124">
+                                            <span>20.169.216.124</span>
+                                        </a>
+    
+                                        <div class="navbar-search__suggestions-item-label-divider"></div>
+            
+                                        <span>My IP</span>
+                                    </div>
+
+                                    <div class="navbar-search__suggestions-item-actions">
+                                        <span class="navbar-search__suggestions-item-enter-key">↵</span>
+            
+                                        <div id="navbar-search-copy-user-ip" class="navbar-search__suggestions-item-copy-icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6666 1.16666H2.66665C1.93331 1.16666 1.33331 1.76666 1.33331 2.5V11.8333H2.66665V2.5H10.6666V1.16666ZM12.6666 3.83333H5.33331C4.59998 3.83333 3.99998 4.43333 3.99998 5.16666V14.5C3.99998 15.2333 4.59998 15.8333 5.33331 15.8333H12.6666C13.4 15.8333 14 15.2333 14 14.5V5.16666C14 4.43333 13.4 3.83333 12.6666 3.83333ZM12.6666 14.5H5.33331V5.16666H12.6666V14.5Z" fill="#1E283A40"/>
+                                            </svg>                                  
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                
+                                    <div id="navbar-search-suggestions-item-user-asn" class="navbar-search__suggestions-item">
+                                        <a href="/AS8075">
+                                            <span>AS8075</span>
+        
+                                            <div class="navbar-search__suggestions-item-label-divider"></div>
+        
+                                            <span>My ASN</span>
+                                        </a>
+
+                                        <div class="navbar-search__suggestions-item-actions">
+                                            <span class="navbar-search__suggestions-item-enter-key">↵</span>
+                
+                                            <div id="navbar-search-copy-user-asn" class="navbar-search__suggestions-item-copy-icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.6666 1.16666H2.66665C1.93331 1.16666 1.33331 1.76666 1.33331 2.5V11.8333H2.66665V2.5H10.6666V1.16666ZM12.6666 3.83333H5.33331C4.59998 3.83333 3.99998 4.43333 3.99998 5.16666V14.5C3.99998 15.2333 4.59998 15.8333 5.33331 15.8333H12.6666C13.4 15.8333 14 15.2333 14 14.5V5.16666C14 4.43333 13.4 3.83333 12.6666 3.83333ZM12.6666 14.5H5.33331V5.16666H12.6666V14.5Z" fill="#1E283A40"/>
+                                                </svg>                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+        
+                                <div id="navbar-search-suggestions-item-user-google-ip" class="navbar-search__suggestions-item">
+                                    <a href="/8.8.8.8">
+                                        <span>8.8.8.8</span>
+                                    </a>
+        
+                                    <div class="navbar-search__suggestions-item-actions">
+                                        <span class="navbar-search__suggestions-item-enter-key">↵</span>
+            
+                                        <div id="navbar-search-copy-ip_8.8.8.8" class="navbar-search__suggestions-item-copy-icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6666 1.16666H2.66665C1.93331 1.16666 1.33331 1.76666 1.33331 2.5V11.8333H2.66665V2.5H10.6666V1.16666ZM12.6666 3.83333H5.33331C4.59998 3.83333 3.99998 4.43333 3.99998 5.16666V14.5C3.99998 15.2333 4.59998 15.8333 5.33331 15.8333H12.6666C13.4 15.8333 14 15.2333 14 14.5V5.16666C14 4.43333 13.4 3.83333 12.6666 3.83333ZM12.6666 14.5H5.33331V5.16666H12.6666V14.5Z" fill="#1E283A40"/>
+                                            </svg>                                  
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div id="navbar-search-suggestions-item-cloudflare-ip" class="navbar-search__suggestions-item">
+                                    <a href="/1.1.1.1">
+                                        <span>1.1.1.1</span>
+                                    </a>
+
+                                    <div class="navbar-search__suggestions-item-actions">
+                                        <span class="navbar-search__suggestions-item-enter-key">↵</span>
+
+                                        <div id="navbar-search-copy-ip_1.1.1.1" class="navbar-search__suggestions-item-copy-icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6666 1.16666H2.66665C1.93331 1.16666 1.33331 1.76666 1.33331 2.5V11.8333H2.66665V2.5H10.6666V1.16666ZM12.6666 3.83333H5.33331C4.59998 3.83333 3.99998 4.43333 3.99998 5.16666V14.5C3.99998 15.2333 4.59998 15.8333 5.33331 15.8333H12.6666C13.4 15.8333 14 15.2333 14 14.5V5.16666C14 4.43333 13.4 3.83333 12.6666 3.83333ZM12.6666 14.5H5.33331V5.16666H12.6666V14.5Z" fill="#1E283A40"/>
+                                            </svg>                                  
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div id="navbar-search-suggestions-item-google-asn" class="navbar-search__suggestions-item">
+                                    <a href="/AS15169">
+                                        <span>AS15169</span>
+                                    </a>
+
+                                    <div class="navbar-search__suggestions-item-actions">
+                                        <span class="navbar-search__suggestions-item-enter-key">↵</span>
+                                        <div id="navbar-search-copy-ip_AS15169" class="navbar-search__suggestions-item-copy-icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6666 1.16666H2.66665C1.93331 1.16666 1.33331 1.76666 1.33331 2.5V11.8333H2.66665V2.5H10.6666V1.16666ZM12.6666 3.83333H5.33331C4.59998 3.83333 3.99998 4.43333 3.99998 5.16666V14.5C3.99998 15.2333 4.59998 15.8333 5.33331 15.8333H12.6666C13.4 15.8333 14 15.2333 14 14.5V5.16666C14 4.43333 13.4 3.83333 12.6666 3.83333ZM12.6666 14.5H5.33331V5.16666H12.6666V14.5Z" fill="#1E283A40"/>
+                                            </svg>                                  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div class="navbar-search__input-command-key">
+                            <span>⌘K</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
                     
                     <ul class="navbar-nav align-items-stretch order-1 order-lg-2 d-md-none my-4 my-sm-2  d-xl-flex ">
@@ -237,6 +480,16 @@
                     </ul>
                     
                     
+                    <div class="navbar-search__mobile">
+                        <div id="navbar-search-input-container-mobile" class="navbar-search__input-container">
+                            <form autocomplete="off">
+                                <input id="navbar-search-input-mobile" type="text" class="navbar-search__input" placeholder="Search any IP data...">
+                            </form>
+                        </div>
+                        <div id="navbar-search-mobile-error" class="navbar-search__mobile-error">
+                            <span>Invalid IP or ASN</span>
+                        </div>
+                    </div>
                     <ul class="navbar-nav navbar-nav-main order-2 order-lg-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
@@ -2226,6 +2479,236 @@ Source:         AAAA
 
         }
     </script>
+    <script>
+        $(document).ready(function() {
+            const searchInput = document.getElementById('navbar-search-input');
+            const searchInputMobile = document.getElementById('navbar-search-input-mobile');
+            const searchInputMobileWrapper = document.getElementById('navbar-search-input-container-mobile');
+            const searchErrorMobile = document.getElementById('navbar-search-mobile-error');
+            const searchDropdown = document.getElementById('navbar-search-dropdown');
+
+            const searchForm = searchInput.closest('form');
+            const searchError = document.getElementById('navbar-search-dropdown-error');
+
+            const userIpEl = document.getElementById('navbar-search-suggestions-item-user-ip');
+            const userAsnEl = document.getElementById('navbar-search-suggestions-item-user-asn');
+            const googleIpEl = document.getElementById('navbar-search-suggestions-item-user-google-ip');
+            const cloudflareIpEl = document.getElementById('navbar-search-suggestions-item-cloudflare-ip');
+            const googleAsnEl = document.getElementById('navbar-search-suggestions-item-google-asn');
+
+            const userIpLink = userIpEl.querySelector('a');
+            const userAsnLink = userAsnEl ? userAsnEl.querySelector('a') : null;
+            const googleIpLink = googleIpEl.querySelector('a');
+            const cloudflareIpLink = cloudflareIpEl.querySelector('a');
+            const googleAsnLink = googleAsnEl.querySelector('a');
+            
+            const userIpCopyEl = document.getElementById('navbar-search-copy-user-ip');
+            const userAsnCopyEl = userAsnEl ? document.getElementById('navbar-search-copy-user-asn') : null;
+            const googleIpCopyEl = document.getElementById('navbar-search-copy-ip_8.8.8.8');
+            const cloudflareIpCopyEl = document.getElementById('navbar-search-copy-ip_1.1.1.1');
+            const googleAsnCopyEl = document.getElementById('navbar-search-copy-ip_AS15169');
+            let selectedIndex = -1;
+            let initialValue = '';
+
+            if (initialValue) {
+                searchInput.value = initialValue;
+            }
+
+            const dropdownItems = [
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '20.169.216.124' },
+                { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
+                { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
+                { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
+                { el: googleAsnEl, link: googleAsnLink, copyElement: googleAsnCopyEl, value: 'AS15169' }
+            ].filter(item => item.el);
+
+            if (searchInput && searchDropdown) {
+                searchInput.addEventListener('focus', function() {
+                    searchDropdown.style.display = 'flex';
+                    selectedIndex = -1;
+                });
+
+                searchInput.addEventListener('blur', function(e) {
+                    if (e.relatedTarget instanceof HTMLElement && e.relatedTarget.closest('a')) {
+                        return;
+                    }
+
+                    searchDropdown.style.display = 'none';
+                    
+                    if (selectedIndex !== -1) {
+                        dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                    }
+
+                    selectedIndex = -1;
+                });
+
+                searchDropdown.addEventListener('mousedown', function(e) {
+                    e.preventDefault();
+                });
+
+                if (searchInputMobileWrapper) {
+                    searchInputMobileWrapper.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        searchInputMobile.focus();
+                    });
+                }
+
+                dropdownItems.forEach(item => {
+                    if (item.el) {
+                        item.el.addEventListener('mousedown', function(e) {
+                            e.preventDefault();
+                            window.location.href = `/${item.value}?source=lookup`;
+                        });
+                    }
+
+                    if (item.link) {
+                        item.link.addEventListener('blur', function(e) {
+                            if (e.relatedTarget instanceof HTMLElement && e.relatedTarget.closest('a')) {
+                                return;
+                            }
+
+                            item.el.classList.remove('suggestions-item__with-focus');
+                            selectedIndex = -1;
+                            searchDropdown.style.display = 'none';
+                        });
+                    }
+
+                    if (item.copyElement) {
+                        item.copyElement.addEventListener('mousedown', function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            navigator.clipboard.writeText(item.value);
+                        });
+                    }
+                });
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key.toLowerCase() === 'k' && e.metaKey) {
+                    e.preventDefault();
+                    searchInput.focus();
+                }
+
+                if (searchDropdown.style.display === 'flex') {
+                    switch (e.key) {
+                        case 'ArrowDown':
+                            e.preventDefault();
+                            if (selectedIndex === dropdownItems.length - 1) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                                searchInput.focus();
+                                selectedIndex = -1;
+                                return;
+                            }
+                            
+                            if (selectedIndex >= 0) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                            }
+
+                            selectedIndex = selectedIndex + 1;
+                            dropdownItems[selectedIndex].el.classList.add('suggestions-item__with-focus');
+                            dropdownItems[selectedIndex].link.focus();
+                            break;
+                        case 'ArrowUp':
+                            e.preventDefault();
+                            if (selectedIndex === -1) {
+                                selectedIndex = dropdownItems.length - 1;
+                                dropdownItems[selectedIndex].el.classList.add('suggestions-item__with-focus');
+                                dropdownItems[selectedIndex].link.focus();
+                            } else if (selectedIndex > 0) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                                selectedIndex = selectedIndex - 1;
+                                dropdownItems[selectedIndex].el.classList.add('suggestions-item__with-focus');
+                                dropdownItems[selectedIndex].link.focus();
+                            } else {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                                selectedIndex = -1;
+                                searchInput.focus();
+                            }
+                            break;
+                        case 'Tab':
+                            e.preventDefault();
+                            if (selectedIndex === dropdownItems.length - 1) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                                searchInput.focus();
+                                selectedIndex = -1;
+                                return;
+                            }
+
+                            if (selectedIndex >= 0) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                            }
+
+                            selectedIndex = selectedIndex + 1;
+                            dropdownItems[selectedIndex].el.classList.add('suggestions-item__with-focus');
+                            dropdownItems[selectedIndex].link.focus();
+                            break;
+                        case 'Enter':
+                            if (selectedIndex >= 0 && selectedIndex < dropdownItems.length) {
+                                e.preventDefault();
+                                
+                                const selectedItem = dropdownItems[selectedIndex];
+                                selectedIndex = -1;
+                                window.location.href = `/${selectedItem.value}?lookup_source=search-bar`;
+                            }
+                            break;
+                        case 'Escape':
+                            e.preventDefault();
+                            searchDropdown.style.display = 'none';
+                            if (selectedIndex !== -1) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                            }
+                            selectedIndex = -1;
+                            searchInput.blur();
+                        default:
+                            if (selectedIndex !== -1) {
+                                dropdownItems[selectedIndex].el.classList.remove('suggestions-item__with-focus');
+                                selectedIndex = -1;
+                                searchInput.focus();
+                            }
+                    }
+                }
+            });
+
+            function isValidIPOrASN(value) {
+                const ipRegex =
+                    /((^\s*((([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]))\s*$)|(^\s*((([0-9a-f]{1,4}:){7}([0-9a-f]{1,4}|:))|(([0-9a-f]{1,4}:){6}(:[0-9a-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9a-f]{1,4}:){5}(((:[0-9a-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9a-f]{1,4}:){4}(((:[0-9a-f]{1,4}){1,3})|((:[0-9a-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9a-f]{1,4}:){3}(((:[0-9a-f]{1,4}){1,4})|((:[0-9a-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9a-f]{1,4}:){2}(((:[0-9a-f]{1,4}){1,5})|((:[0-9a-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9a-f]{1,4}:){1}(((:[0-9a-f]{1,4}){1,6})|((:[0-9a-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9a-f]{1,4}){1,7})|((:[0-9a-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*$))/gi;
+                const asnRegex = /^(AS\d+)$/;
+                return ipRegex.test(value) || asnRegex.test(value);
+            }
+
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const value = searchInput.value.trim();
+
+                if (isValidIPOrASN(value)) {
+                    window.location.href = `/${value}?lookup_source=search-bar`;
+                } else {
+                    searchError.style.display = 'block';
+                }
+            });
+
+            searchInput.addEventListener('input', function() {
+                searchError.style.display = 'none';
+            });
+
+            const searchFormMobile = searchInputMobile.closest('form');
+
+            searchFormMobile.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const value = searchInputMobile.value.trim();
+
+                if (isValidIPOrASN(value)) {
+                    window.location.href = `/${value}?lookup_source=search-bar`;
+                } else {
+                    searchErrorMobile.style.display = 'block';
+                }
+            });
+
+            searchInputMobile.addEventListener('input', function() {
+                searchErrorMobile.style.display = 'none';
+            });
+        });
+    </script>
 
     <script type='application/ld+json'>
         {
@@ -2273,7 +2756,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjU0LjgzLjI1" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMTY5LjIxNi4xMjQ%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
