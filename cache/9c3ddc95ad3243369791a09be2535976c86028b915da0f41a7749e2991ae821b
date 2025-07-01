@@ -8190,11 +8190,11 @@
         "latest_time": "2025-07-01T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250701183706-6d090eb8-7ade-4e9f-84d9-e32cd8e6a9eb",
-    "process_time": 456,
-    "server_id": "app195",
+    "query_id": "20250701192105-110f2152-9799-42e5-abb9-8959e97a667f",
+    "process_time": 489,
+    "server_id": "app179",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-07-01T18:37:06.700173"
+    "time": "2025-07-01T19:21:05.601890"
 }
