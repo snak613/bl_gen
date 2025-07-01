@@ -12,17 +12,17 @@
     "cached": false,
     "data": {
         "prefixes": [],
-        "query_starttime": "2025-06-17T00:00:00",
-        "query_endtime": "2025-07-01T00:00:00",
+        "query_starttime": "2025-06-17T08:00:00",
+        "query_endtime": "2025-07-01T08:00:00",
         "resource": "13399",
-        "latest_time": "2025-07-01T00:00:00",
+        "latest_time": "2025-07-01T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250701103045-95057296-5ff7-44fc-ae6c-1e6610052d5a",
-    "process_time": 12,
+    "query_id": "20250701112334-f6541f2c-327b-4237-878a-f11ba1c4445f",
+    "process_time": 11,
     "server_id": "app177",
     "build_version": "main-2025.06.24",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-07-01T10:30:45.936210"
+    "time": "2025-07-01T11:23:34.021647"
 }
