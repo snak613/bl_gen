@@ -370,8 +370,8 @@
         
                                 <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
                                     <div class="suggestions-item__label-container">
-                                        <a href="/52.252.59.139">
-                                            <span>52.252.59.139</span>
+                                        <a href="/40.83.150.72">
+                                            <span>40.83.150.72</span>
                                         </a>
     
                                         <div class="navbar-search__suggestions-item-label-divider"></div>
@@ -8058,9 +8058,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS15482</h4>
-                        <p class="opacity-100">GTT - EMEA Ltd.</p>
-                        <a href="/AS15482" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS201266</h4>
+                        <p class="opacity-100">We The Curious Limited</p>
+                        <a href="/AS201266" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -8069,9 +8069,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS15622</h4>
-                        <p class="opacity-100">Frontline Consultancy and Business Services Limited</p>
-                        <a href="/AS15622" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS204688</h4>
+                        <p class="opacity-100">Lantec Managed Services LLP</p>
+                        <a href="/AS204688" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -8080,9 +8080,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS198135</h4>
-                        <p class="opacity-100">HLJONE NETWORK LTD</p>
-                        <a href="/AS198135" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS213431</h4>
+                        <p class="opacity-100">Servercim Internet Hizmetleri Ltd</p>
+                        <a href="/AS213431" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -8091,9 +8091,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS208632</h4>
-                        <p class="opacity-100">YouFibre Limited</p>
-                        <a href="/AS208632" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS213580</h4>
+                        <p class="opacity-100">Tarisu Limited</p>
+                        <a href="/AS213580" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -8102,9 +8102,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS21422</h4>
-                        <p class="opacity-100">Connect internet Solutions Limited</p>
-                        <a href="/AS21422" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS214116</h4>
+                        <p class="opacity-100">Acora Limited</p>
+                        <a href="/AS214116" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -8113,9 +8113,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS215638</h4>
-                        <p class="opacity-100">Cilix Limited</p>
-                        <a href="/AS215638" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS39610</h4>
+                        <p class="opacity-100">LCH Group Holdings Limited</p>
+                        <a href="/AS39610" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -8369,7 +8369,7 @@ Source:         AAAA
             }
 
             const dropdownItems = [
-                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '52.252.59.139' },
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '40.83.150.72' },
                 { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
                 { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
                 { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
@@ -8610,7 +8610,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjUyLjU5LjEzOQ%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NDAuODMuMTUwLjcy" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
