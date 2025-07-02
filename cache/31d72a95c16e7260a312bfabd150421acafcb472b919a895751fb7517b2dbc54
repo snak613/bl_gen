@@ -6301,11 +6301,11 @@
         "latest_time": "2025-07-02T08:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250702144838-e770b9ca-b5a9-4c7c-8e35-17b38437489b",
-    "process_time": 339,
-    "server_id": "app179",
+    "query_id": "20250702152922-377a48e8-f01c-4390-954d-eb30320cff78",
+    "process_time": 302,
+    "server_id": "app186",
     "build_version": "main-2025.07.02",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-07-02T14:48:38.406410"
+    "time": "2025-07-02T15:29:23.018941"
 }
