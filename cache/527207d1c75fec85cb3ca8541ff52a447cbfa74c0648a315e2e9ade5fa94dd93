@@ -370,8 +370,8 @@
         
                                 <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
                                     <div class="suggestions-item__label-container">
-                                        <a href="/52.232.183.149">
-                                            <span>52.232.183.149</span>
+                                        <a href="/13.88.56.192">
+                                            <span>13.88.56.192</span>
                                         </a>
     
                                         <div class="navbar-search__suggestions-item-label-divider"></div>
@@ -2204,9 +2204,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS11708</h4>
-                        <p class="opacity-100">City of North Kansas City, MO</p>
-                        <a href="/AS11708" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS10561</h4>
+                        <p class="opacity-100">Brandeis University</p>
+                        <a href="/AS10561" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2215,9 +2215,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS14034</h4>
-                        <p class="opacity-100">Swire Pacific Holdings Inc.</p>
-                        <a href="/AS14034" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS10571</h4>
+                        <p class="opacity-100">UnitedHealth Group Incorporated</p>
+                        <a href="/AS10571" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2226,9 +2226,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS1541</h4>
-                        <p class="opacity-100">Headquarters, USAISC</p>
-                        <a href="/AS1541" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS16555</h4>
+                        <p class="opacity-100">Henkels and McCoy, Inc.</p>
+                        <a href="/AS16555" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2237,9 +2237,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS16617</h4>
-                        <p class="opacity-100">CISP</p>
-                        <a href="/AS16617" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS36356</h4>
+                        <p class="opacity-100">Charter Communications LLC</p>
+                        <a href="/AS36356" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2248,9 +2248,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS23526</h4>
-                        <p class="opacity-100">Humphreys Half Moon Inn &amp; Suites</p>
-                        <a href="/AS23526" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS394618</h4>
+                        <p class="opacity-100">NextGear Capital, Inc.</p>
+                        <a href="/AS394618" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2259,9 +2259,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS397980</h4>
-                        <p class="opacity-100">NacSpace LLC</p>
-                        <a href="/AS397980" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS397676</h4>
+                        <p class="opacity-100">Qualfon Data Services Group, LLC</p>
+                        <a href="/AS397676" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2515,7 +2515,7 @@ Source:         AAAA
             }
 
             const dropdownItems = [
-                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '52.232.183.149' },
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '13.88.56.192' },
                 { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
                 { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
                 { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
@@ -2756,7 +2756,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjMyLjE4My4xNDk%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=MTMuODguNTYuMTky" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
