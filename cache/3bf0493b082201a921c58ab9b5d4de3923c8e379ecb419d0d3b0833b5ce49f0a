@@ -370,8 +370,8 @@
         
                                 <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
                                     <div class="suggestions-item__label-container">
-                                        <a href="/172.200.66.173">
-                                            <span>172.200.66.173</span>
+                                        <a href="/40.122.164.14">
+                                            <span>40.122.164.14</span>
                                         </a>
     
                                         <div class="navbar-search__suggestions-item-label-divider"></div>
@@ -6731,7 +6731,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 450 peers
+                                    are 451 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -8592,7 +8592,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 28 upstreams
+                                    are 29 upstreams
                                     for this ASN.
                                 </small>
                             </p>
@@ -8895,6 +8895,24 @@ Source:         AAAA
                 <td>
                     
                         Megaport (UK) Limited
+                    
+                </td>
+                
+            </tr>
+            
+            <tr class="collapse collapse-upstreams-table">
+                
+                <td>
+                    
+                        <a href="/AS52925"
+                        class="charcoal-link "
+                        >AS52925</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Ascenty Data Centers e Telecomunicações S/A
                     
                 </td>
                 
@@ -9246,9 +9264,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS17109</h4>
-                        <p class="opacity-100">Calitech</p>
-                        <a href="/AS17109" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS23120</h4>
+                        <p class="opacity-100">Legacy</p>
+                        <a href="/AS23120" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9257,9 +9275,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS17209</h4>
-                        <p class="opacity-100">HMH</p>
-                        <a href="/AS17209" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS23346</h4>
+                        <p class="opacity-100">Insitu, Inc</p>
+                        <a href="/AS23346" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9268,9 +9286,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS205232</h4>
-                        <p class="opacity-100">Felix Alcantara</p>
-                        <a href="/AS205232" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS36427</h4>
+                        <p class="opacity-100">Vassar College</p>
+                        <a href="/AS36427" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9279,9 +9297,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS22275</h4>
-                        <p class="opacity-100">Securenet Systems, Inc.</p>
-                        <a href="/AS22275" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS393510</h4>
+                        <p class="opacity-100">St Francis Healthcare System of Hawaii</p>
+                        <a href="/AS393510" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9290,9 +9308,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS30371</h4>
-                        <p class="opacity-100">GTT Americas, LLC</p>
-                        <a href="/AS30371" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS399172</h4>
+                        <p class="opacity-100">Vercara, LLC</p>
+                        <a href="/AS399172" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9301,9 +9319,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS30666</h4>
-                        <p class="opacity-100">Xchange Telecom Corp.</p>
-                        <a href="/AS30666" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS400523</h4>
+                        <p class="opacity-100">InterSystems Corporation</p>
+                        <a href="/AS400523" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9557,7 +9575,7 @@ Source:         AAAA
             }
 
             const dropdownItems = [
-                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '172.200.66.173' },
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '40.122.164.14' },
                 { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
                 { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
                 { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
@@ -9798,7 +9816,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MTcyLjIwMC42Ni4xNzM%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NDAuMTIyLjE2NC4xNA%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
