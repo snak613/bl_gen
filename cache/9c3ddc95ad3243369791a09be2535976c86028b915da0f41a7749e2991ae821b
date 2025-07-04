@@ -8221,11 +8221,11 @@
         "latest_time": "2025-07-04T00:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250704063936-79732d10-7e64-4481-9eed-4ecb5b655bf3",
-    "process_time": 442,
-    "server_id": "app164",
+    "query_id": "20250704072820-a776efe5-69af-44bf-b245-d614a1f3c44d",
+    "process_time": 472,
+    "server_id": "app196",
     "build_version": "main-2025.07.03",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-07-04T06:39:36.493006"
+    "time": "2025-07-04T07:28:20.511123"
 }
