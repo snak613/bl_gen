@@ -371,7 +371,7 @@
                                 <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
                                     <div class="suggestions-item__label-container">
                                         <a href="/what-is-my-ip">
-                                            <span>20.171.61.122</span>
+                                            <span>40.118.211.67</span>
                                         </a>
     
                                         <div class="navbar-search__suggestions-item-label-divider"></div>
@@ -8371,7 +8371,7 @@ Source:         AAAA
             }
 
             const dropdownItems = [
-                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '20.171.61.122' },
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '40.118.211.67' },
                 { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
                 { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
                 { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
@@ -8414,7 +8414,7 @@ Source:         AAAA
                         item.el.addEventListener('click', function(e) {
                             e.preventDefault();
 
-                            if (item.value === '20.171.61.122') {
+                            if (item.value === '40.118.211.67') {
                                 window.location.href = `/what-is-my-ip`;
                             } else {
                                 window.location.href = `/${item.value}?lookup_source=search-bar`;
@@ -8617,7 +8617,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=MjAuMTcxLjYxLjEyMg%3D%3D" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NDAuMTE4LjIxMS42Nw%3D%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
