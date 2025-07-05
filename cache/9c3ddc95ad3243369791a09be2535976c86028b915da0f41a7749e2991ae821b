@@ -8225,11 +8225,11 @@
         "latest_time": "2025-07-05T16:00:00",
         "earliest_time": "2000-08-01T00:00:00"
     },
-    "query_id": "20250705192022-6532b282-7f90-44d5-afb7-7401beedec42",
-    "process_time": 520,
-    "server_id": "app167",
+    "query_id": "20250705194106-a837bbf1-d588-4971-8f9f-31a7c21b7fe3",
+    "process_time": 449,
+    "server_id": "app169",
     "build_version": "main-2025.07.03",
     "status": "ok",
     "status_code": 200,
-    "time": "2025-07-05T19:20:23.265733"
+    "time": "2025-07-05T19:41:06.779108"
 }
