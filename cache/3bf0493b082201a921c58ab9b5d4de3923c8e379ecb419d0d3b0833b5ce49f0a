@@ -371,7 +371,7 @@
                                 <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
                                     <div class="suggestions-item__label-container">
                                         <a href="/what-is-my-ip">
-                                            <span>52.252.98.23</span>
+                                            <span>52.240.214.178</span>
                                         </a>
     
                                         <div class="navbar-search__suggestions-item-label-divider"></div>
@@ -6755,7 +6755,7 @@ Source:         AAAA
                             <p>
                                 <small>
                                     There
-                                    are 451 peers
+                                    are 449 peers
                                     for this ASN.
                                 </small>
                             </p>
@@ -7274,24 +7274,6 @@ Source:         AAAA
                 <td>
                     
                         Centorrino Technologies Pty Ltd
-                    
-                </td>
-                
-            </tr>
-            
-            <tr class="collapse collapse-peers-table">
-                
-                <td>
-                    
-                        <a href="/AS136557"
-                        class="charcoal-link "
-                        >AS136557</a>
-                    
-                </td>
-                
-                <td>
-                    
-                        Host Universal Pty Ltd
                     
                 </td>
                 
@@ -8575,6 +8557,24 @@ Source:         AAAA
                 
             </tr>
             
+            <tr class="collapse collapse-peers-table">
+                
+                <td>
+                    
+                        <a href="/AS199938"
+                        class="charcoal-link "
+                        >AS199938</a>
+                    
+                </td>
+                
+                <td>
+                    
+                        Netzwerge GmbH
+                    
+                </td>
+                
+            </tr>
+            
         </tbody>
     </table>
 
@@ -9288,9 +9288,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS11848</h4>
-                        <p class="opacity-100">SecureVision</p>
-                        <a href="/AS11848" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS11204</h4>
+                        <p class="opacity-100">Kings Park Central School District</p>
+                        <a href="/AS11204" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9299,9 +9299,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS12147</h4>
-                        <p class="opacity-100">Discover Financial Services</p>
-                        <a href="/AS12147" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS19692</h4>
+                        <p class="opacity-100">Ephraim McDowell Health, Inc.</p>
+                        <a href="/AS19692" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9310,9 +9310,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS20362</h4>
-                        <p class="opacity-100">VeriSign Global Registry Services</p>
-                        <a href="/AS20362" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS2691</h4>
+                        <p class="opacity-100">AT&amp;T Enterprises, LLC</p>
+                        <a href="/AS2691" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9321,9 +9321,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS20438</h4>
-                        <p class="opacity-100">Stoo Networks LLC</p>
-                        <a href="/AS20438" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS30613</h4>
+                        <p class="opacity-100">Chicago Mercantile Exchange</p>
+                        <a href="/AS30613" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9332,9 +9332,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS30042</h4>
-                        <p class="opacity-100">Boerboel LLC</p>
-                        <a href="/AS30042" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS395042</h4>
+                        <p class="opacity-100">ActiveCampaign, Inc.</p>
+                        <a href="/AS395042" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9343,9 +9343,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS3135</h4>
-                        <p class="opacity-100">Maryland Information Technology Center</p>
-                        <a href="/AS3135" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS398296</h4>
+                        <p class="opacity-100">Digitalsystem Technology Inc.</p>
+                        <a href="/AS398296" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -9599,7 +9599,7 @@ Source:         AAAA
             }
 
             const dropdownItems = [
-                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '52.252.98.23' },
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '52.240.214.178' },
                 { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
                 { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
                 { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
@@ -9642,7 +9642,7 @@ Source:         AAAA
                         item.el.addEventListener('click', function(e) {
                             e.preventDefault();
 
-                            if (item.value === '52.252.98.23') {
+                            if (item.value === '52.240.214.178') {
                                 window.location.href = `/what-is-my-ip`;
                             } else {
                                 window.location.href = `/${item.value}?lookup_source=search-bar`;
@@ -9845,7 +9845,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjUyLjk4LjIz" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjQwLjIxNC4xNzg%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">

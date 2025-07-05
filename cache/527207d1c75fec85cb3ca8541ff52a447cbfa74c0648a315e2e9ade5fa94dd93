@@ -371,7 +371,7 @@
                                 <div id="navbar-search-suggestions-item-user-ip" class="navbar-search__suggestions-item">
                                     <div class="suggestions-item__label-container">
                                         <a href="/what-is-my-ip">
-                                            <span>52.252.98.23</span>
+                                            <span>52.240.214.178</span>
                                         </a>
     
                                         <div class="navbar-search__suggestions-item-label-divider"></div>
@@ -2206,9 +2206,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS18839</h4>
-                        <p class="opacity-100">Fisher Scientific</p>
-                        <a href="/AS18839" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS14302</h4>
+                        <p class="opacity-100">Infinigon, Inc.</p>
+                        <a href="/AS14302" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2217,9 +2217,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS18877</h4>
-                        <p class="opacity-100">Sailthru, INC</p>
-                        <a href="/AS18877" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS17101</h4>
+                        <p class="opacity-100">PORT OF LOS ANGELES</p>
+                        <a href="/AS17101" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2228,9 +2228,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS26937</h4>
-                        <p class="opacity-100">The Midland Company</p>
-                        <a href="/AS26937" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS26275</h4>
+                        <p class="opacity-100">Patient Care Technologies</p>
+                        <a href="/AS26275" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2239,9 +2239,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS27452</h4>
-                        <p class="opacity-100">Incomm</p>
-                        <a href="/AS27452" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS36581</h4>
+                        <p class="opacity-100">Hearst-Argyle Television, Inc.</p>
+                        <a href="/AS36581" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2250,9 +2250,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS30013</h4>
-                        <p class="opacity-100">Pixar</p>
-                        <a href="/AS30013" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS399452</h4>
+                        <p class="opacity-100">Dial Communications</p>
+                        <a href="/AS399452" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2261,9 +2261,9 @@ Source:         AAAA
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card h-100 card-standard is-clickable no-image">
                     <div class="card-body">
-                        <h4 class="card-title mb-2">AS30356</h4>
-                        <p class="opacity-100">Blue Cross Blue Shield of Michigan Mutual Insurance</p>
-                        <a href="/AS30356" class="card-cover">More details</a>
+                        <h4 class="card-title mb-2">AS400822</h4>
+                        <p class="opacity-100">H5 Data Centers</p>
+                        <a href="/AS400822" class="card-cover">More details</a>
                     </div>
                 </div>
             </div>
@@ -2517,7 +2517,7 @@ Source:         AAAA
             }
 
             const dropdownItems = [
-                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '52.252.98.23' },
+                { el: userIpEl, link: userIpLink, copyElement: userIpCopyEl, value: '52.240.214.178' },
                 { el: userAsnEl, link: userAsnLink, copyElement: userAsnCopyEl, value: 'AS8075' },
                 { el: googleIpEl, link: googleIpLink, copyElement: googleIpCopyEl, value: '8.8.8.8' },
                 { el: cloudflareIpEl, link: cloudflareIpLink, copyElement: cloudflareIpCopyEl, value: '1.1.1.1' },
@@ -2560,7 +2560,7 @@ Source:         AAAA
                         item.el.addEventListener('click', function(e) {
                             e.preventDefault();
 
-                            if (item.value === '52.252.98.23') {
+                            if (item.value === '52.240.214.178') {
                                 window.location.href = `/what-is-my-ip`;
                             } else {
                                 window.location.href = `/${item.value}?lookup_source=search-bar`;
@@ -2763,7 +2763,7 @@ Source:         AAAA
 
 
 
-<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjUyLjk4LjIz" style="display: none;" />
+<img src="//pixel.ipinfo.io/analytics/log?i4=NTIuMjQwLjIxNC4xNzg%3D" style="display: none;" />
 <!-- Stackdriver Error Reporting -->
 <script defer src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@v0.7.0/dist/stackdriver-errors-concat.min.js"></script>
 <script type="text/javascript">
